@@ -108,15 +108,21 @@ Cas de déblocage avant la retraite (sans pénalité fiscale sur le capital) :
 
 Hors ces cas : déblocage impossible (capital bloqué jusqu'à la retraite).
 
+## Priorité absolue : abondement employeur avant PER individuel
+
+**Avant tout versement PER individuel, vérifier que l'abondement PEE / PERCO de l'employeur est saturé.**
+
+L'abondement est un complément versé par l'entreprise pour chaque euro versé par le salarié sur son PEE ou son PERCO — typiquement 50 à 300 % du versement salarié, dans une limite annuelle (8 % du PASS pour le PEE, 16 % du PASS pour le PERCO).
+
+| Dispositif | Avantage |
+|------------|----------|
+| **PEE + abondement** | Prime gratuite de l'employeur + exonération IR sur l'abondement + PFU 17,2 % à la sortie (pas 30 %) |
+| **PERCO + abondement** | Idem + blocage jusqu'à la retraite |
+| **PER individuel** | Uniquement économie d'impôt immédiate × TMI, pas de match employeur |
+
+**Règle** : un abondement employeur de 100 % représente un rendement immédiat de 100 %. Aucune défiscalisation PER n'égale ce rendement. Toujours saturer PEE/PERCO en premier si l'option existe.
+
 ## Mécanique pratique
-
-### Variable V_BTPERPTOTV / V_BTPERPTOTC
-
-Le moteur de calcul DGFIP (Mlang / `irpp-mcp`) exige la variable `V_BTPERPTOTV` (ou V_BTPERPTOTC pour le conjoint) qui représente le **plafond disponible**.
-
-**Sans cette variable, le moteur annule la déduction** — c'est un piège connu.
-
-Le serveur `irpp-mcp` calcule le plafond automatiquement depuis les revenus de l'année courante (cas simplifié : pas de report des années précédentes).
 
 ### Déclaration
 

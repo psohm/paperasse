@@ -10,8 +10,8 @@
       "assertions": [
         "Le skill applique l'abattement forfaitaire 10% sur les salaires (RNI = 50 000 × 0.9 = 45 000 €)",
         "Le barème progressif est appliqué tranche par tranche (0%, 11%, 30%)",
-        "Les tranches utilisées proviennent de data/bareme-ir-2025.json",
-        "L'impôt brut pour 45 000 € avec 1 part est calculé (environ 6 623 €)",
+        "Les tranches 2025 correctes sont utilisées (11 600 / 29 579 / 84 577 / 181 917)",
+        "L'impôt brut pour 45 000 € avec 1 part est calculé (environ 6 604 €)",
         "La décote est testée mais non applicable (impôt brut > 1 982 €)",
         "L'année de référence des données (revenus 2025, déclaration 2026) est mentionnée",
         "Pas de prélèvements sociaux calculés (pas de revenus du capital)",
@@ -31,7 +31,7 @@
         "Le plafonnement QF est testé : gain réel vs gain max (2 × 1 807 = 3 614 €)",
         "Le skill indique si le plafond QF est actif ou non dans ce cas",
         "La réponse explique que les enfants aident mais que le gain est plafonné par demi-part",
-        "Les valeurs proviennent de data/bareme-ir-2025.json"
+        "Les valeurs 2025 correctes sont utilisées (tranches, plafond QF 1 807 €)"
       ]
     },
     {
@@ -41,10 +41,10 @@
       "expected_output": "Économie immédiate calculée (8 000 × TMI 30% = 2 400 €). Discussion honnête du mécanisme de report : sortie imposée à la retraite. Recommandation dépend du TMI futur estimé. Plafond PER 10% des revenus pro. Rappel PEE/PERCO en priorité si disponible.",
       "files": [],
       "assertions": [
-        "L'économie immédiate 8 000 × 30% = 2 400 € est calculée",
+        "L'économie immédiate est calculée en appliquant le TMI 30% au montant effectivement déductible",
         "Le skill explique que c'est un REPORT d'imposition, pas une exonération",
         "Le TMI futur à la retraite est mentionné comme variable clé",
-        "Le plafond PER 10% des revenus professionnels est mentionné (ici 8 000 € est en dessous)",
+        "Le plafond PER 10% des revenus professionnels nets est correctement appliqué (72 000 × 10% = 7 200 €, donc 800 € non déductibles sur les 8 000 versés)",
         "Le skill rappelle qu'il faut saturer l'abondement employeur PEE/PERCO en priorité si disponible",
         "La réponse nuance : pas toujours avantageux, dépend de la situation"
       ]
@@ -120,7 +120,7 @@
         "Le total patrimoine net taxable est calculé (930 000 €)",
         "Le skill conclut que le seuil d'assujettissement (1 300 000 €) n'est pas atteint",
         "Pas d'IFI dû, pas de déclaration 2042-IFI",
-        "Les données proviennent de data/ifi-bareme.json"
+        "Le seuil d'assujettissement IFI 1 300 000 € est correctement cité"
       ]
     },
     {
