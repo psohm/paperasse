@@ -252,17 +252,25 @@ Vous avez un métier de la paperasse que vous aimeriez voir automatisé ? Consul
 
 Paperasse est maintenu en open source grâce au soutien de ses sponsors. [Devenir sponsor](https://github.com/sponsors/romainsimon).
 
+### Founding Sponsors
+
+<p align="center"><!-- sponsors-founding --><!-- sponsors-founding --></p>
+
+### Premier Sponsors
+
+<p align="center"><!-- sponsors-premier --><!-- sponsors-premier --></p>
+
 ### Sponsors
 
-<p align="center"><!-- sponsors-premium --><!-- sponsors-premium --></p>
+<p align="center"><!-- sponsors-sponsor --><!-- sponsors-sponsor --></p>
 
 ### Backers
 
-<p align="center"><!-- sponsors-backers --><!-- sponsors-backers --></p>
+<p align="center"><!-- sponsors-backer --><!-- sponsors-backer --></p>
 
 ### Supporters
 
-<p align="center"><!-- sponsors-supporters --><!-- sponsors-supporters --></p>
+<p align="center"><!-- sponsors-supporter --><!-- sponsors-supporter --></p>
 
 ---
 
