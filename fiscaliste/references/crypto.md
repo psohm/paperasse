@@ -98,8 +98,6 @@ Déclaration obligatoire détaillant **chaque cession** :
 
 **Staking occasionnel — déclaration BNC à la réception** : valorisation en EUR à chaque date de réception, déclaration formulaire 2042 C PRO case 5HQ (micro-BNC, abattement 34%) ou 5HG (réel). Exonération micro-BNC si recettes ≤ 305 €.
 
-**Règle de choix selon TMI** : TMI 11% → BNC avantageux (abattement 34%) / TMI 30%+ → PFU 31,4% avantageux.
-
 **Zone grise** : la doctrine DGFIP évolue. Vérifier les dernières positions BOFiP.
 
 ## Documentation à conserver
