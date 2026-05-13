@@ -20,6 +20,8 @@ Le régime des particuliers s'applique aux cessions **occasionnelles** d'actifs 
 | Cession crypto contre € / USD | **Oui** |
 | Paiement en crypto (biens/services) | **Oui** (cession déguisée) |
 | Échange crypto-to-crypto (BTC → ETH) | **Non** (sursis, art. 150 VH bis) |
+| Crypto → stablecoin (USDC, USDT…) | **Non** (stablecoins traités comme crypto-actifs) |
+| Stablecoin → € / USD | **Oui** (fait générateur) |
 | Staking / mining / airdrop | Selon contexte — souvent BNC ou BIC, pas PV mobilière |
 
 **Règle du sursis crypto-to-crypto** : les échanges entre crypto-actifs ne déclenchent pas l'imposition. Seul le passage en monnaie fiat (ou en biens/services) est taxable.
@@ -29,7 +31,7 @@ Le régime des particuliers s'applique aux cessions **occasionnelles** d'actifs 
 **Formule officielle** :
 
 ```
-plus_value_cession = prix_cession − (valeur_totale_portefeuille × montant_cession / valeur_portefeuille_avant_cession)
+plus_value_cession = prix_cession − (prix_total_acquisition_portefeuille × prix_cession / valeur_portefeuille_avant_cession)
 ```
 
 **Conséquences pratiques** :
@@ -41,10 +43,12 @@ plus_value_cession = prix_cession − (valeur_totale_portefeuille × montant_ces
 
 ## Taux d'imposition
 
-### Régime par défaut : PFU 30%
+### Régime par défaut : PFU 31,4%
 
-- 12,8% IR + 17,2% PS
+- 12,8% IR + 18,6% PS (LFSS 2026, applicable aux revenus du patrimoine réalisés dès 2025)
 - Application sur la plus-value nette annuelle (après compensation des moins-values de l'année)
+
+> **Note** : certains revenus limitativement énumérés restent soumis au taux PS de 17,2% (art. L136-8 IV CSS). Les PV crypto relèvent du taux 18,6%.
 
 ### Option barème (depuis revenus 2023)
 
@@ -86,11 +90,13 @@ Déclaration obligatoire détaillant **chaque cession** :
 
 | Activité | Régime probable |
 |----------|----------------|
-| Staking occasionnel | BNC non professionnel ou PV mobilière selon cas |
+| Staking occasionnel | BNC non professionnel |
 | Mining | BIC |
 | Staking/lending professionnel | BIC |
 | Airdrop reçu passivement | Non imposable à la réception, PV au moment de la cession |
 | Rewards actifs (tâches à accomplir) | BNC ou salaire |
+
+**Staking occasionnel — déclaration BNC à la réception** : valorisation en EUR à chaque date de réception, déclaration formulaire 2042 C PRO case 5HQ (micro-BNC, abattement 34%) ou 5HG (réel). Exonération micro-BNC si recettes ≤ 305 €.
 
 **Zone grise** : la doctrine DGFIP évolue. Vérifier les dernières positions BOFiP.
 
@@ -101,6 +107,7 @@ Pour 6 ans minimum (délai de reprise) :
 - Preuves des dates et prix d'acquisition
 - Détail des échanges crypto-to-crypto (même non imposables)
 - Transferts entre wallets (pour prouver la continuité du portefeuille)
+- Export des rewards de staking avec valorisation fiat à chaque date de réception
 
 ## Références CGI / BOFiP
 
@@ -108,4 +115,5 @@ Pour 6 ans minimum (délai de reprise) :
 - Activité habituelle (BIC) : art. 34 CGI
 - Méthode PAMC : art. 150 VH bis-II CGI
 - Sursis échange crypto-crypto : art. 150 VH bis-I-2 CGI
-- BOFiP : BOI-RPPM-PVBMC-30
+- BOFiP PV crypto : BOI-RPPM-PVBMC-30
+- BOFiP BNC staking/mining : BOI-BNC-CHAMP-10-10-20-40

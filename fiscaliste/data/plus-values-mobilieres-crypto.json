@@ -4,7 +4,8 @@
     "declaration": 2026,
     "sources": [
       "BOI-RPPM-PVBMI",
-      "BOI-RPPM-PVBMC-30 (crypto)"
+      "BOI-RPPM-PVBMC-30 (crypto)",
+      "BOI-BNC-CHAMP-10-10-20-40 (staking/BNC)"
     ]
   },
 
@@ -50,12 +51,12 @@
 
     "methode_pamc": {
       "description": "Prix d'Acquisition Moyen Pondéré en Continu",
-      "formule": "plus_value = prix_cession − (valeur_totale_portefeuille × montant_cession / valeur_portefeuille_avant_cession)",
+      "formule": "plus_value = prix_cession − (prix_total_acquisition_portefeuille × prix_cession / valeur_portefeuille_avant_cession)",
       "note": "Nécessite de tracer l'historique complet du portefeuille depuis le premier achat"
     },
 
     "taux": {
-      "regime_defaut": "PFU 30% (12.8% IR + 17.2% PS)",
+      "regime_defaut": "PFU 31.4% (12.8% IR + 18.6% PS) — LFSS 2026, applicable revenus du patrimoine dès 2025",
       "option_bareme": "Possible depuis revenus 2023 (LFI 2022) — avantageuse si TMI ≤ 11%"
     },
 
