@@ -31,7 +31,7 @@ Le régime des particuliers s'applique aux cessions **occasionnelles** d'actifs 
 **Formule officielle** :
 
 ```
-plus_value_cession = prix_cession − (valeur_totale_portefeuille × montant_cession / valeur_portefeuille_avant_cession)
+plus_value_cession = prix_cession − (prix_total_acquisition_portefeuille × prix_cession / valeur_portefeuille_avant_cession)
 ```
 
 **Conséquences pratiques** :
