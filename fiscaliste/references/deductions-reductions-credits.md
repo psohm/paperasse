@@ -67,6 +67,28 @@ Voir `data/niches-fiscales.json` → `dispositifs_hors_plafond`.
 | **Girardin industriel outre-mer** | Variable, sous conditions |
 | **Investissement outre-mer** (catégories spécifiques) | Variable |
 
+### Frais de scolarité des enfants (cases 7EF, 7EG, 7EH)
+
+Réduction forfaitaire par enfant à charge (ou rattaché) **scolarisé au 31 décembre** de l'année d'imposition.
+
+| Niveau | Case | Réduction |
+|--------|------|-----------|
+| Collège | 7EG | 61 € |
+| Lycée | 7EH | 153 € |
+| Enseignement supérieur | 7EF | 183 € |
+
+**Conditions d'éligibilité** :
+- Enfant à charge ou majeur rattaché au foyer
+- Scolarisé dans un établissement public ou privé (France ou étranger), ou en formation initiale par correspondance via le Cned
+- **L'enfant ne doit pas être lié par un contrat de travail** et ne doit pas être rémunéré
+
+**Exclusions explicites** (source : service-public.fr, vérifié avril 2026) :
+- Apprentissage (contrat d'apprentissage)
+- Congé formation
+- Contrat d'études avec l'employeur
+
+Un alternant en apprentissage ne peut donc **pas** ouvrir droit à cette réduction, même s'il est rattaché au foyer et poursuit des études supérieures.
+
 ### Dons aux associations
 
 **Taux standard : 66%** de réduction, dans la limite de 20% du revenu imposable.
