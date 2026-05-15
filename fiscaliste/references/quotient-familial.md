@@ -103,6 +103,26 @@ Dans la zone de décote, chaque euro supplémentaire de revenu :
 
 Taux marginal effectif ≈ (taux_barème × 1,4525). Un foyer à la tranche 11% peut subir un taux marginal effectif proche de 16% dans la zone de décote.
 
+## Personnes rattachées (enfants majeurs)
+
+Un enfant majeur célibataire peut demander son rattachement au foyer fiscal de ses parents.
+
+**Effet QF** : +0,5 part par personne rattachée, comme un enfant à charge classique.
+
+**Plafonnement** : le même plafond par demi-part s'applique (art. 197-2° CGI).
+Voir `data/bareme-ir-2025.json` → `quotient_familial.plafond_gain_par_demi_part`.
+
+**Conditions** :
+- Enfant célibataire de moins de 21 ans, ou moins de 25 ans s'il poursuit des études
+- Rattachement déclaré case **7EF** (enseignement supérieur) ou équivalent
+
+**Contrepartie** : les revenus de l'enfant sont en principe intégrés dans le RNI du foyer,
+sous réserve des exonérations applicables aux apprentis et jobs étudiants
+(voir `references/ir-mecanisme.md` → section "Revenus partiellement exonérés").
+
+**À chiffrer au cas par cas** : si les revenus de l'enfant dépassent les seuils d'exonération,
+l'impôt supplémentaire peut annuler le gain QF lié au rattachement.
+
 ## Parent isolé (case T)
 
 Majoration de 0,5 part pour les contribuables vivant seuls et élevant des enfants.
