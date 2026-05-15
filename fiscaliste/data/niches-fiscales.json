@@ -69,7 +69,7 @@
     "conditions": "Enfant à charge ou rattaché, scolarisé au 31 décembre de l'année d'imposition",
     "exclusions": ["apprentissage", "congé formation", "contrat d'études avec l'employeur"],
     "note": "Montants stables (non indexés annuellement).",
-    "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F9/personnalisation/resultat?lang=&quest0=0&quest=",
+    "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F9/",
     "source_verifiee": "2026-04-15"
   },
 
