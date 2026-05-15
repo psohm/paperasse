@@ -34,7 +34,8 @@
       "Garde d'enfant hors domicile (crédit d'impôt 50%)",
       "Girardin industriel outre-mer (sous conditions)",
       "Cotisations syndicales (crédit d'impôt 66%)",
-      "Investissement outre-mer (certaines catégories)"
+      "Investissement outre-mer (certaines catégories)",
+      "Frais de scolarité des enfants (réduction forfaitaire 7EF/7EG/7EH)"
     ]
   },
 
@@ -57,6 +58,19 @@
       "plafond_depenses_par_enfant": 3500,
       "age_limite": "Enfant de moins de 6 ans au 1er janvier"
     }
+  },
+
+  "frais_scolarite": {
+    "cases": {
+      "college": { "case_2042": "7EG", "reduction_par_enfant": 61 },
+      "lycee":   { "case_2042": "7EH", "reduction_par_enfant": 153 },
+      "superieur": { "case_2042": "7EF", "reduction_par_enfant": 183 }
+    },
+    "conditions": "Enfant à charge ou rattaché, scolarisé au 31 décembre de l'année d'imposition",
+    "exclusions": ["apprentissage", "congé formation", "contrat d'études avec l'employeur"],
+    "note": "Montants stables (non indexés annuellement).",
+    "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F9/personnalisation/resultat?lang=&quest0=0&quest=",
+    "source_verifiee": "2026-04-15"
   },
 
   "distinction_mecanismes": {
