@@ -84,7 +84,7 @@ Montants stables (non indexés annuellement).
 **Conditions** : établissement public ou privé (France ou étranger), ou formation initiale Cned. L'enfant ne doit pas être lié par un contrat de travail ni rémunéré.
 
 **Exclusions explicites** : apprentissage, congé formation, contrat d'études avec l'employeur. Un alternant rattaché au foyer ne peut donc **pas** en bénéficier.
-Source : [service-public.fr — Frais de scolarité (vérifié avril 2026)](https://www.service-public.gouv.fr/particuliers/vosdroits/F9/personnalisation/resultat?lang=&quest0=0&quest=)
+Source : [service-public.fr — Frais de scolarité (vérifié avril 2026)](https://www.service-public.gouv.fr/particuliers/vosdroits/F9/)
 
 ### Dons aux associations
 
