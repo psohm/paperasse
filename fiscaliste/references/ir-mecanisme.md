@@ -63,6 +63,19 @@ La confusion la plus fréquente concerne le "salaire net imposable".
 
 **Piège classique** : confondre 1AJ (salaires) et 1AP (chômage). L'abattement 10% s'applique uniquement sur 1AJ.
 
+## Revenus partiellement exonérés (art. 81 bis CGI)
+
+Certains revenus d'activité sont exonérés d'IR en tout ou partie, pour les mineurs comme pour les majeurs rattachés. Seul l'éventuel excédent est imposable et doit être déclaré.
+
+| Type de revenu | Exonération | Case 2042 | Base légale |
+|----------------|-------------|-----------|-------------|
+| Rémunération d'apprentissage | Dans la limite du SMIC annuel | 1AJ / 1BJ | art. 81 bis CGI |
+| Salaires jobs étudiants / travail saisonnier | Dans la limite de 3 × SMIC mensuel brut | 1AJ / 1BJ | art. 81 bis CGI |
+
+**Valeurs SMIC de référence** : à vérifier chaque année sur legifrance.gouv.fr (revalorisation au 1er janvier et en cours d'année si inflation).
+
+**Piège** : ces exonérations s'appliquent quel que soit le foyer fiscal de l'enfant (à charge ou rattaché). Ne pas intégrer la fraction exonérée dans le RNI.
+
 ## Application du barème progressif
 
 Utiliser `data/bareme-ir-2025.json` — champ `bareme_ir.tranches`.
@@ -129,6 +142,7 @@ Mécanisme de collecte en temps réel — pas d'imposition supplémentaire.
 - Barème IR : art. 197 CGI
 - Quotient familial : art. 194-195 CGI
 - Décote : art. 197-4° CGI
+- Exonérations apprentis / jobs étudiants : art. 81 bis CGI
 - Abattement 10% salaires : art. 83-3° CGI
 - CEHR : art. 223 sexies CGI
 - Revenus exceptionnels : art. 163-0 A CGI
