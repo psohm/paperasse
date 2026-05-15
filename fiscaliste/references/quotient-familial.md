@@ -114,7 +114,8 @@ Voir `data/bareme-ir-2025.json` → `quotient_familial.plafond_gain_par_demi_par
 
 **Conditions** :
 - Enfant célibataire de moins de 21 ans, ou moins de 25 ans s'il poursuit des études
-- Rattachement déclaré case **7EF** (enseignement supérieur) ou équivalent
+
+**Note** : la case **7EF** (réduction de 183 € par enfant dans l'enseignement supérieur) est distincte du rattachement — c'est une réduction d'impôt optionnelle, non applicable par exemple à un alternant en apprentissage.
 
 **Contrepartie** : les revenus de l'enfant sont en principe intégrés dans le RNI du foyer,
 sous réserve des exonérations applicables aux apprentis et jobs étudiants
