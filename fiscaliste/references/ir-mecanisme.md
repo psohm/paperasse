@@ -63,18 +63,24 @@ La confusion la plus fréquente concerne le "salaire net imposable".
 
 **Piège classique** : confondre 1AJ (salaires) et 1AP (chômage). L'abattement 10% s'applique uniquement sur 1AJ.
 
-## Revenus partiellement exonérés (art. 81 bis CGI)
+## Revenus partiellement exonérés — apprentis, stagiaires, étudiants
 
-Certains revenus d'activité sont exonérés d'IR en tout ou partie, pour les mineurs comme pour les majeurs rattachés. Seul l'éventuel excédent est imposable et doit être déclaré.
+Deux régimes distincts, deux articles différents. S'appliquent aux enfants mineurs à charge comme aux majeurs rattachés.
 
-| Type de revenu | Exonération | Case 2042 | Base légale |
-|----------------|-------------|-----------|-------------|
-| Rémunération d'apprentissage | Dans la limite du SMIC annuel | 1AJ / 1BJ | art. 81 bis CGI |
-| Salaires jobs étudiants / travail saisonnier | Dans la limite de 3 × SMIC mensuel brut | 1AJ / 1BJ | art. 81 bis CGI |
+| Type | Article | Conditions | Plafond 2025 |
+|------|---------|------------|--------------|
+| Apprentis (contrat d'apprentissage L. 6221-1 CT) et stagiaires (L. 124-6 Code éduc.) | art. 81 bis CGI | Contrat formel requis | SMIC annuel = **21 622 €** |
+| Jobs étudiants | art. 81, 36° CGI | ≤ 25 ans au 1er janvier ; activité exercée pendant l'année scolaire/universitaire **ou** durant les congés scolaires/universitaires | 3 × SMIC mensuel = **5 405 €** |
 
-**Valeurs SMIC de référence** : à vérifier chaque année sur legifrance.gouv.fr (revalorisation au 1er janvier et en cours d'année si inflation).
+**Mécanique de déclaration (interface impots.gouv.fr)** :
+1. Le contribuable saisit le montant **total** perçu par ligne employeur
+2. Il **coche la case** correspondante : "Exonérations Apprentis/Stagiaires" ou "Exonérations Étudiants"
+3. Le système calcule le "total à reporter" = max(0, total − plafond)
+4. Ce montant net remonte en 1AJ/1BJ/1CJ sur la déclaration principale
 
-**Piège** : ces exonérations s'appliquent quel que soit le foyer fiscal de l'enfant (à charge ou rattaché). Ne pas intégrer la fraction exonérée dans le RNI.
+Si un même employeur verse à la fois des revenus étudiants et d'autres revenus, **dupliquer la ligne** pour déclarer séparément les deux natures.
+
+**Valeurs SMIC** : revalorisées au 1er janvier (et en cours d'année si inflation) — vérifier sur legifrance.gouv.fr.
 
 ## Application du barème progressif
 
@@ -142,7 +148,8 @@ Mécanisme de collecte en temps réel — pas d'imposition supplémentaire.
 - Barème IR : art. 197 CGI
 - Quotient familial : art. 194-195 CGI
 - Décote : art. 197-4° CGI
-- Exonérations apprentis / jobs étudiants : art. 81 bis CGI
+- Exonérations apprentis / stagiaires : art. 81 bis CGI
+- Exonérations jobs étudiants : art. 81, 36° CGI
 - Abattement 10% salaires : art. 83-3° CGI
 - CEHR : art. 223 sexies CGI
 - Revenus exceptionnels : art. 163-0 A CGI
