@@ -38,13 +38,21 @@ Exemple : versement 5 000 €, TMI 30% → économie IR = 1 500 €.
 Les plafonds non utilisés des années précédentes sont mobilisables. Ordre d'imputation : plafond de l'année en cours d'abord, puis plafonds reportés **en commençant par le plus ancien** (N-3, N-2, N-1).
 
 **Durée du report :**
-- Jusqu'au 31/12/2025 : report sur les **3 années suivantes**
-- À compter du 01/01/2026 : report sur les **5 années suivantes** (loi de finances 2026)
+- Plafonds générés jusqu'en 2025 : report sur les **3 années suivantes**
+- Plafonds générés à partir de 2026 : report sur les **5 années suivantes** (loi de finances 2026 — non rétroactif)
+
+**Expiration des plafonds antérieurs :**
+
+| Plafond généré en | Expire fin | Règle |
+|------------------|-----------|-------|
+| 2023 | 2026 | 3 ans |
+| 2024 | 2027 | 3 ans |
+| 2025 | 2028 | 3 ans |
+| 2026 | 2031 | 5 ans (nouveau) |
 
 **Exemple (revenus 2025, déclaration 2026) :**
-- Plafond N : 5 000 €, utilisé 3 000 € → reste 2 000 € reportables
-- Si inutilisé, ce reliquat est disponible jusqu'en 2031 (5 ans)
-- Au-delà, le plafond non utilisé est **perdu**
+- Plafond N (2025) : 5 000 €, utilisé 3 000 € → reliquat 2 000 € disponible jusqu'à fin 2028 (3 ans, règle ancienne)
+- Plafond N (2026) : même scénario → reliquat disponible jusqu'à fin 2031 (5 ans)
 
 **Ordre FIFO obligatoire :** on consomme N-3 avant N-2 avant N-1 pour que les droits les plus anciens ne périment pas.
 
