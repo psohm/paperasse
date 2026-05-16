@@ -159,6 +159,27 @@ Cas de déblocage avant la retraite (sans pénalité fiscale sur le capital) :
 
 Hors ces cas : déblocage impossible (capital bloqué jusqu'à la retraite).
 
+### Décès avant la retraite : transmission du PER
+
+Le PER individuel est quasi-systématiquement souscrit sous forme assurance (contrat d'assurance-vie dédié). En cas de décès, il fonctionne **hors succession** via la clause bénéficiaire — comme une assurance-vie classique.
+
+**Avantage clé : l'IR différé est effacé au décès.** Les bénéficiaires ne paient pas l'impôt sur le revenu qui aurait été dû à la sortie — seule la fiscalité assurance s'applique.
+
+| Âge au décès | Régime fiscal pour les bénéficiaires |
+|---|---|
+| < 70 ans | 152 500 € par bénéficiaire exonéré, puis 20% jusqu'à 852 500 €, 31,25% au-delà (art. 990 I CGI) |
+| ≥ 70 ans | 30 500 € global exonéré tous bénéficiaires confondus, excédent soumis aux droits de succession (art. 757 B CGI) |
+
+**Mourir avant 70 ans avec un PER bien alimenté = transmission très efficace.** Le capital transmis bénéficie du même abattement que l'assurance-vie, et l'IR différé disparaît.
+
+**Piège de la rente en cas de décès :** si le titulaire a opté pour la rente viagère, les fonds sont aliénés — les héritiers ne récupèrent rien à la mort, sauf :
+- Clause de **réversion** (la rente continue au conjoint, à taux réduit)
+- **Annuités garanties** (la rente est versée jusqu'à un terme fixe même en cas de décès)
+
+Ces options réduisent le montant de la rente. À négocier à la souscription si la transmission est un objectif.
+
+**PER compte-titres (rare) :** tombe dans la succession classique — IR et droits de succession s'appliquent. Vérifier la forme du contrat.
+
 ## Priorité absolue : abondement employeur avant PER individuel
 
 **Avant tout versement PER individuel, vérifier que l'abondement PEE / PERECO de l'employeur est saturé.**
