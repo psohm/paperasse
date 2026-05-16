@@ -189,6 +189,18 @@ hors plafond de déduction).
 **Exclusif** : impossible de cumuler rattachement et déduction de pension alimentaire pour
 le même enfant.
 
+**Articulation avec les donations** : la pension alimentaire peut constituer un vecteur de
+transfert patrimonial fiscalement efficace, là où une donation classique n'est pas déductible.
+Sur 10 ans à TMI 30%, le parent transfère 6 855 € × 10 = 68 550 € avec une économie fiscale
+d'environ 20 565 €. La donation classique (abattement 100 000 € par parent, renouvelable
+tous les 15 ans) reste complémentaire mais sans avantage IR pour le parent.
+
+**Condition impérative** : la pension doit être justifiée par l'état de besoin de l'enfant
+(art. 208 Code civil). Si l'enfant dispose de revenus ou d'un patrimoine suffisants,
+l'administration peut requalifier les versements et redresser (abus de droit). La stratégie
+est légitime tant que le besoin est réel et démontrable — étudiant, apprenti, début de
+carrière avec revenus modestes.
+
 ## Parent isolé (case T)
 
 Majoration de 0,5 part pour les contribuables vivant seuls et élevant des enfants.
