@@ -159,17 +159,17 @@ Hors ces cas : déblocage impossible (capital bloqué jusqu'à la retraite).
 
 ## Priorité absolue : abondement employeur avant PER individuel
 
-**Avant tout versement PER individuel, vérifier que l'abondement PEE / PERCO de l'employeur est saturé.**
+**Avant tout versement PER individuel, vérifier que l'abondement PEE / PERECO de l'employeur est saturé.**
 
-L'abondement est un complément versé par l'entreprise pour chaque euro versé par le salarié sur son PEE ou son PERCO — typiquement 50 à 300 % du versement salarié, dans une limite annuelle (8 % du PASS pour le PEE, 16 % du PASS pour le PERCO).
+L'abondement est un complément versé par l'entreprise pour chaque euro versé par le salarié sur son PEE ou son PERECO — typiquement 50 à 300 % du versement salarié, dans une limite annuelle (8 % du PASS pour le PEE, 16 % du PASS pour le PERECO).
 
 | Dispositif | Avantage |
 |------------|----------|
 | **PEE + abondement** | Prime gratuite de l'employeur + exonération IR sur l'abondement + PFU 17,2 % à la sortie (pas 30 %) |
-| **PERCO + abondement** | Idem + blocage jusqu'à la retraite |
+| **PERECO + abondement** | Idem + blocage jusqu'à la retraite |
 | **PER individuel** | Uniquement économie d'impôt immédiate × TMI, pas de match employeur |
 
-**Règle** : un abondement employeur de 100 % représente un rendement immédiat de 100 %. Aucune défiscalisation PER n'égale ce rendement. Toujours saturer PEE/PERCO en premier si l'option existe.
+**Règle** : un abondement employeur de 100 % représente un rendement immédiat de 100 %. Aucune défiscalisation PER n'égale ce rendement. Toujours saturer PEE/PERECO en premier si l'option existe.
 
 ## Mécanique pratique
 
@@ -188,8 +188,8 @@ Plafond = **10% du bénéfice imposable** (dans la limite de 8 PASS) **+ 15% de 
 
 | Composante | Calcul | Plafond 2025 |
 |------------|--------|--------------|
-| Fraction 10% | 10% × bénéfice (max 8 PASS) | Max 37 094 € |
-| Fraction 15% | 15% × (bénéfice − 46 368 €) si bénéfice > PASS | Variable |
+| Fraction 10% | 10% × bénéfice (max 8 PASS) | Max 37 680 € |
+| Fraction 15% | 15% × (bénéfice − 47 100 €) si bénéfice > PASS | Variable |
 | Plancher | Même plancher que PER individuel | 4 710 € |
 
 Le plafond TNS est donc potentiellement **supérieur** au plafond du PER individuel (37 680 €) pour les bénéfices élevés. Consulter l'avis d'imposition pour le plafond exact calculé par la DGFIP.
@@ -207,7 +207,7 @@ Ce double avantage est plus puissant que le PER individuel (qui ne joue que sur 
 Pour un dirigeant TNS qui peut mettre en place un PEE/PERECO dans sa société (voir `equity-salarial.md` → section dédiée TNS) :
 
 **Ordre de priorité recommandé :**
-1. Saturer l'abondement PEE + PERECO (11 127 € pour 2025) — double exonération IS + cotisations, liquidité PEE après 5 ans
+1. Saturer l'abondement PEE + PERECO (11 304 € pour 2025) — double exonération IS + cotisations, liquidité PEE après 5 ans
 2. PER TNS (art. 154 bis) pour les montants supplémentaires — plafond plus élevé, double avantage IR + cotisations
 3. PER individuel (art. 163 quatervicies) en complément si plafond Madelin atteint
 
@@ -216,12 +216,12 @@ Pour un dirigeant TNS qui peut mettre en place un PEE/PERECO dans sa société (
 - La sortie PEE est en PFU sur les gains (pas au barème) — avantage si TMI retraite = TMI actuel
 - Liquidité supérieure : PEE débloquable après 5 ans (nombreux cas anticipés)
 
-## Différence PER individuel vs PERCO / PERO
+## Différence PER individuel vs PERECO / PERO
 
 - **PER individuel** (présent doc) : versements volontaires, déductibles dans la limite du plafond, sortie imposée au barème.
-- **PERCO / PEE** (plans d'épargne entreprise) : alimenté par intéressement, participation, abondement employeur. Voir la section Equity salarial listée depuis SKILL.md pour le détail.
+- **PERECO / PEE** (plans d'épargne entreprise) : alimenté par intéressement, participation, abondement employeur. Voir la section Equity salarial listée depuis SKILL.md pour le détail.
 
-**Règle d'or** : toujours saturer l'abondement employeur (PEE + PERCO) AVANT d'abonder un PER individuel. L'abondement est de l'argent gratuit — aucun rendement PER individuel n'égale un match à 50-300%.
+**Règle d'or** : toujours saturer l'abondement employeur (PEE + PERECO) AVANT d'abonder un PER individuel. L'abondement est de l'argent gratuit — aucun rendement PER individuel n'égale un match à 50-300%.
 
 ### Plafond partagé : ce qui consomme le plafond 163 quatervicies
 
@@ -245,7 +245,7 @@ Le plafond de déduction (art. 163 quatervicies) est commun à toutes les envelo
 2. **Sortie en capital sur un TMI 45%** : imposition quasi équivalente à un revenu normal — intérêt limité
 3. **Mutualisation couple oubliée** : conjoint sans revenu laisse 4 710 € de plafond inemployé
 4. **Assurer le plafond N-1 sur l'avis** : ne pas se fier aux calculs manuels, utiliser le plafond officiel DGFIP
-5. **PER individuel avant PEE/PERCO** : manque l'abondement employeur
+5. **PER individuel avant PEE/PERECO** : manque l'abondement employeur
 
 ## Références CGI / BOFiP
 

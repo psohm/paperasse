@@ -88,8 +88,13 @@
       "dividendes_reinvestis": "Exonérés IR tant qu'ils restent dans l'enveloppe"
     },
     "perco_pereco": {
-      "description": "Équivalent PER collectif — PERCO remplacé par PERO depuis loi Pacte",
-      "sortie_retraite": "Rente ou capital, même fiscalité que PER individuel (versements au barème, gains au PFU)",
+      "description": "Équivalent PER collectif — PERCO remplacé par PERECO (PER d'Entreprise Collectif) depuis loi Pacte",
+      "sortie_retraite": {
+        "compartiment_2_capital": "Capital exonéré IR (seuls les gains soumis à PS 17,2%) — régime distinct du PER individuel",
+        "compartiment_2_rente": "RVCTO (Rente Viagère à Titre Onéreux) — fraction imposable : <50 ans=70%, 50-59=50%, 60-69=40%, 70+=30%",
+        "compartiment_1_capital": "Versements volontaires déduits → imposés au barème comme PER individuel ; gains au PFU",
+        "note": "Compartiment 2 (intéressement/participation/abondement) bénéficie d'un régime fiscal plus favorable que le PER individuel"
+      },
       "abondement_employeur": "Exonéré IR et PS dans les plafonds (plafond distinct du PEE)",
       "plafond_base": "16% × PASS de l'année de versement — voir per-plafonds.json → epargne_salariale_abondement.pereco",
       "deblocage_anticipe_reference": "Art. L. 3334-14 Code du travail (PERCO) ; art. L. 224-4 CMF (PERO)",
@@ -103,7 +108,7 @@
       ],
       "note_pero_vs_pee": "Cas de déblocage beaucoup plus restreints que le PEE. Mariage, naissance, divorce, rupture contrat travail, création entreprise : NON déblocables sur PERCO/PERECO."
     },
-    "arbitrage_vs_per_individuel": "PEE / PERCO = abondement employeur (levier immédiat +30% à +300%). PER individuel = déduction du RNI. À combiner : abonder d'abord PEE/PERCO pour capter l'abondement, puis PER individuel."
+    "arbitrage_vs_per_individuel": "PEE / PERECO = abondement employeur (levier immédiat +30% à +300%). PER individuel = déduction du RNI. À combiner : abonder d'abord PEE/PERECO pour capter l'abondement, puis PER individuel."
   },
 
   "pee_perco_tns": {
@@ -170,7 +175,7 @@
         "Déduction cotisations du revenu professionnel (réduction assiette cotisations TNS)",
         "Adapté à l'horizon retraite long"
       ],
-      "ordre_priorite": "1. Saturer PEE + PERECO (11 127 €) / 2. PER TNS (ex-Madelin) pour le surplus / 3. PER individuel 163 quatervicies en complément",
+      "ordre_priorite": "1. Saturer PEE + PERECO (11 304 € pour 2025) / 2. PER TNS (ex-Madelin) pour le surplus / 3. PER individuel 163 quatervicies en complément",
       "tmi_30_41": "PEE/PERECO généralement plus avantageux — double exonération + liquidité",
       "tmi_45": "PEE reste attractif (sortie PFU gains) ; PER TNS moins pertinent si TMI retraite reste élevé"
     },
@@ -194,8 +199,8 @@
         }
       },
       "interessement_participation": {
-        "interessement_pee_plafond_2025": 34776,
-        "interessement_pee_base": "75% × PASS 2025",
+        "interessement_pee_plafond_2025": 35325,
+        "interessement_pee_base": "75% × PASS de l'année de versement — voir per-plafonds.json",
         "exoneration_cotisations": "Oui (si versement direct ou placement PEE)",
         "exoneration_ir_si_place_pee": true,
         "exoneration_ir_si_non_place": false,

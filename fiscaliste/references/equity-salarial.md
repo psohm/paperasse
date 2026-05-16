@@ -268,6 +268,10 @@ Voir `data/equity-salarial.json` → `pee_perco_tns` pour les paramètres chiffr
 
 L'abondement de la société ne peut dépasser 3× le versement du dirigeant (règle générale des plans).
 
+**Plafond de versement du bénéficiaire sur le PEE :** les versements volontaires personnels sur un PEE sont plafonnés à **25% de la rémunération annuelle brute**. Pour le dirigeant TNS : 25% de la rémunération annuelle déclarée (ou 25% du bénéfice imposable si EI). Ce plafond de versement salarié est distinct du plafond d'abondement employeur.
+
+**Versements volontaires PERECO (compartiment 1) :** le dirigeant peut également alimenter volontairement le compartiment 1 du PERECO, ce qui ouvre le droit au déblocage anticipé pour **achat de la résidence principale**. Les avoirs issus d'abondement/intéressement (compartiment 2) ne donnent pas ce droit.
+
 **Déductibilité IS :**
 L'abondement est une charge déductible du résultat (compte 6474 — charges de personnel liées à la participation et à l'intéressement, ou assimilé). Économie IS = abondement × taux IS (25%, ou 15% sur les 42 500 premiers € pour les PME éligibles).
 
@@ -348,8 +352,8 @@ Dès qu'un salarié (le conjoint) est embauché, l'accord d'intéressement s'app
 
 | Dispositif | Exonération cotisations | Exonération IR | Plafond par bénéficiaire |
 |------------|------------------------|----------------|--------------------------|
-| Intéressement (placé PEE) | Oui | Oui | 75% PASS ≈ 34 776 € (2025) |
-| Participation (placée PEE) | Oui | Oui | 75% PASS ≈ 34 776 € (2025) |
+| Intéressement (placé PEE) | Oui | Oui | 75% PASS ≈ 35 325 € (2025) |
+| Participation (placée PEE) | Oui | Oui | 75% PASS ≈ 35 325 € (2025) |
 | Intéressement (non placé) | Oui | Non (IR) | Idem |
 
 L'intéressement ouvre également droit à un abondement employeur majoré (plafond PEE passe de 3× à toujours 3× le versement salarié, mais le plafond absolu reste 8% PASS). La PPV versée avec un accord d'intéressement est plafonnée à 6 000 € (au lieu de 3 000 €).
