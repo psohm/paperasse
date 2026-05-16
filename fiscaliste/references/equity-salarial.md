@@ -103,7 +103,7 @@ Demander à la société :
 Enveloppe collective distincte du PER individuel.
 
 - **Abondement employeur** : exonéré IR et PS dans les plafonds — **AVANTAGE MAJEUR**
-- **Plafond abondement** : ~3 709 € par bénéficiaire (8% PASS — vérifier annuellement)
+- **Plafond abondement** : 8% × PASS de l'année de versement — voir `data/per-plafonds.json` → `epargne_salariale_abondement.pee`
 - **Blocage** : 5 ans, sauf cas de déblocage anticipé (art. R. 3332-28 Code du travail)
 - **Sortie après 5 ans** : exonération IR, seuls PS 17,2% sur les gains
 - **Dividendes réinvestis** : exonérés IR tant qu'ils restent dans l'enveloppe
@@ -129,7 +129,7 @@ Chaque cas ouvre un délai de 6 mois pour effectuer le retrait (sauf décès et 
 
 - **Sortie à la retraite** : rente ou capital
 - **Fiscalité sortie** : même que PER individuel (versements à barème, gains au PFU)
-- **Abondement employeur** : exonéré dans plafonds (~7 418 €, distinct du plafond PEE)
+- **Abondement employeur** : exonéré dans plafonds (16% × PASS, distinct du plafond PEE — voir `data/per-plafonds.json` → `epargne_salariale_abondement.pereco`)
 
 #### Cas de déblocage anticipé PERCO / PERO
 
@@ -183,13 +183,13 @@ Voir `data/equity-salarial.json` → `pee_perco_tns` pour les paramètres chiffr
 2. La société verse l'abondement (charge déductible du résultat IS)
 3. L'abondement est exonéré de cotisations sociales TNS et d'IR dans les plafonds
 
-**Plafonds 2025 (PASS 2025 = 46 368 €) :**
+**Plafonds** (recalculés chaque année sur le PASS — voir `data/per-plafonds.json` → `epargne_salariale_abondement`) :
 
-| Plan | Plafond abondement annuel | Base |
-|------|--------------------------|------|
-| PEE | 3 709 € | 8% × PASS |
-| PERECO | 7 418 € | 16% × PASS |
-| **Total cumulable** | **11 127 €** | PEE + PERECO = plafonds distincts non fongibles |
+| Plan | Formule | Exemple 2025 (PASS = 47 100 €) |
+|------|---------|-------------------------------|
+| PEE | 8% × PASS | 3 768 € |
+| PERECO | 16% × PASS | 7 536 € |
+| **Total cumulable** | **24% × PASS** | **11 304 €** — plafonds distincts non fongibles |
 
 L'abondement de la société ne peut dépasser 3× le versement du dirigeant (règle générale des plans).
 
@@ -203,10 +203,10 @@ L'abondement est une charge déductible du résultat (compte 6474 — charges de
 
 **Exemple chiffré — gérant SARL IS, IS 25%, cotisations TNS ≈ 42% :**
 
-Pour un abondement plafonné PEE de 3 709 € :
-- Coût net société après IS : 3 709 × (1 − 25%) = **2 782 €**
-- Économie cotisations TNS évitées sur cette somme : 3 709 × 42% ≈ **1 558 €** (si la société avait versé cet équivalent en rémunération)
-- Abondement reçu dans le PEE : **3 709 €**, bloqué 5 ans, sorti exonéré IR (PS 17,2% sur les gains seulement)
+Pour un abondement PEE au plafond (ex. 3 768 € en 2025) :
+- Coût net société après IS : 3 768 × (1 − 25%) = **2 826 €**
+- Économie cotisations TNS évitées : 3 768 × 42% ≈ **1 583 €** (vs versement en rémunération)
+- Abondement reçu dans le PEE : **3 768 €**, bloqué 5 ans, sorti exonéré IR (PS 17,2% sur les gains seulement)
 
 ### Arbitrage PEE/PERECO vs PER TNS (ex-Madelin)
 
@@ -217,13 +217,13 @@ Deux enveloppes concurrentes pour l'optimisation fiscale du dirigeant TNS :
 | Déduction du résultat société | Oui (charge IS) | Oui (cotisations déductibles) |
 | Économie cotisations TNS | Oui, dans plafonds | Oui (assiette cotisations réduite) |
 | Exonération IR entrée | Oui (abondement exclu du revenu) | Oui (déduction revenu professionnel) |
-| Plafond annuel | 11 127 € (PEE + PERECO) | 10% bénéfice + 15% fraction > PASS (plafond souvent plus élevé pour fort bénéfice) |
+| Plafond annuel | 24% × PASS (PEE + PERECO — voir per-plafonds.json) | 10% bénéfice + 15% fraction > PASS (plafond souvent plus élevé pour fort bénéfice) |
 | Liquidité | PEE : déblocage après 5 ans (cas anticipés nombreux) | Bloqué jusqu'à la retraite |
 | Sortie | PEE : exo IR, PS 17,2% gains / PERECO : barème + PFU gains | Barème IR (anciens Madelin : rente obligatoire) |
 | Complexité mise en place | DUE ou accord + dépôt DREETS | Souscription contrat individuel |
 
 **Recommandation pour TMI 30-41% :**
-1. Saturer d'abord PEE + PERECO (11 127 €) — double exonération IS + cotisations, liquidité supérieure
+1. Saturer d'abord PEE + PERECO (24% × PASS — voir per-plafonds.json) — double exonération IS + cotisations, liquidité supérieure
 2. Puis PER TNS (ex-Madelin) pour les montants supplémentaires si le bénéfice le justifie
 3. Enfin PER individuel (163 quatervicies) en complément, plafond partiellement commun
 
@@ -241,7 +241,7 @@ L'abondement PERECO versé par la société est déclaré en **case 6QS** et ré
 | Abondement employeur PERECO (6QS) | **Oui** — réduit le plafond résiduel |
 | Intéressement / participation placés en PERECO | **Non** — exonération séparée |
 
-Un abondement PERECO de 7 418 € (plafond max) peut donc épuiser une grande partie du plafond annuel, laissant peu de marge pour un PER individuel complémentaire. À simuler avant de souscrire un PER individuel en parallèle.
+Un abondement PERECO au plafond (16% × PASS) peut donc épuiser une grande partie du plafond annuel, laissant peu de marge pour un PER individuel complémentaire. À simuler avant de souscrire un PER individuel en parallèle.
 
 ### Conjoint salarié : leviers additionnels
 

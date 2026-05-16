@@ -31,14 +31,16 @@ Plafond = max(4 710 €,  10% × revenus pro N-1)
           sans revenus          BNC, BIC — pas les revenus du capital
 ```
 
-### Bornes (revenus 2025)
+### Bornes
 
-| | Valeur | Base |
-|--|--------|------|
-| Plancher (minimum garanti) | 4 710 € | 10% × PASS 2025 |
-| Plafond absolu | 37 680 € | 10% × 8 × PASS 2025 |
+Voir `data/per-plafonds.json` → `per_individuel` pour les montants à jour (plancher et plafond absolu recalculés chaque année sur le PASS).
 
-Le plancher s'applique même sans aucun revenu professionnel — un foyer sans activité peut toujours déduire 4 710 €.
+| | Formule | Exemple 2025 (PASS = 47 100 €) |
+|--|---------|-------------------------------|
+| Plancher (minimum garanti) | 10% × PASS | 4 710 € |
+| Plafond absolu | 10% × 8 × PASS | 37 680 € |
+
+Le plancher s'applique même sans aucun revenu professionnel — un foyer sans activité peut toujours déduire au moins le plancher.
 
 ### Report des plafonds non utilisés
 

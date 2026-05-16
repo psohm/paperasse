@@ -69,8 +69,7 @@
     "description": "Plans d'Épargne Entreprise et Plans d'Épargne Retraite Collective — enveloppes collectives",
     "pee": {
       "abondement_employeur": "Exonéré IR et PS dans les plafonds — AVANTAGE MAJEUR vs versement direct",
-      "plafond_abondement_pee_2025": 3709,
-      "plafond_base": "8% × PASS par bénéficiaire (à vérifier annuellement)",
+      "plafond_base": "8% × PASS de l'année de versement — voir per-plafonds.json → epargne_salariale_abondement.pee",
       "blocage_duree": "5 ans",
       "deblocage_anticipe_reference": "Art. R. 3332-28 Code du travail — délai 6 mois par cas (sauf décès et surendettement : immédiat)",
       "deblocage_anticipe_cas": [
@@ -92,8 +91,7 @@
       "description": "Équivalent PER collectif — PERCO remplacé par PERO depuis loi Pacte",
       "sortie_retraite": "Rente ou capital, même fiscalité que PER individuel (versements au barème, gains au PFU)",
       "abondement_employeur": "Exonéré IR et PS dans les plafonds (plafond distinct du PEE)",
-      "plafond_abondement_perco_2025": 7418,
-      "plafond_base": "16% × PASS par bénéficiaire",
+      "plafond_base": "16% × PASS de l'année de versement — voir per-plafonds.json → epargne_salariale_abondement.pereco",
       "deblocage_anticipe_reference": "Art. L. 3334-14 Code du travail (PERCO) ; art. L. 224-4 CMF (PERO)",
       "deblocage_anticipe_cas": [
         "Décès (bénéficiaire ou conjoint/PACS)",
@@ -146,20 +144,12 @@
         "note": "Pas de personnalité morale distincte — impossible de jouer le rôle d'employeur vis-à-vis de soi-même."
       }
     },
-    "pass_2025": 46368,
-    "plafonds_2025": {
-      "pee_abondement": {
-        "montant": 3709,
-        "base_calcul": "8% × PASS 2025",
-        "ratio_max_abondement": 3,
-        "note_ratio": "L'abondement ne peut dépasser 3× le versement du dirigeant"
-      },
-      "pereco_abondement": {
-        "montant": 7418,
-        "base_calcul": "16% × PASS 2025",
-        "ratio_max_abondement": 3
-      },
-      "total_cumule_max": 11127,
+    "plafonds": {
+      "source": "per-plafonds.json → epargne_salariale_abondement (PASS de l'année de versement)",
+      "formule_pee": "8% × PASS",
+      "formule_pereco": "16% × PASS",
+      "ratio_max_abondement": 3,
+      "note_ratio": "L'abondement ne peut dépasser 3× le versement du dirigeant",
       "note_cumul": "PEE et PERECO ont des plafonds distincts et non fongibles"
     },
     "fiscalite_abondement": {
