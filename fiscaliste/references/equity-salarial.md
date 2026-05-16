@@ -239,6 +239,18 @@ Deux enveloppes concurrentes pour l'optimisation fiscale du dirigeant TNS :
 - L'avantage du PER diminue si le TMI à la retraite reste élevé (report d'imposition, pas exonération)
 - PEE reste attractif : sortie en PFU sur gains (pas au barème), horizon 5 ans seulement
 
+**Point crucial — plafond partagé (163 quatervicies) :**
+L'abondement PERECO versé par la société est déclaré en **case 6QS** et réduit le plafond disponible pour les versements volontaires sur un PER individuel. PER individuel et PERECO pompent sur la même enveloppe fiscale.
+
+| Flux | Consomme le plafond 163 quatervicies ? |
+|------|----------------------------------------|
+| Versements volontaires PER individuel (6NS) | **Oui** |
+| Versements volontaires PERECO compartiment 1 (6NS) | **Oui** |
+| Abondement employeur PERECO (6QS) | **Oui** — réduit le plafond résiduel |
+| Intéressement / participation placés en PERECO | **Non** — exonération séparée |
+
+Un abondement PERECO de 7 418 € (plafond max) peut donc épuiser une grande partie du plafond annuel, laissant peu de marge pour un PER individuel complémentaire. À simuler avant de souscrire un PER individuel en parallèle.
+
 ### Conjoint salarié : leviers additionnels
 
 Quand le gérant embauche son conjoint, de nouveaux outils de rémunération optimisée deviennent accessibles.

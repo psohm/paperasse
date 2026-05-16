@@ -181,6 +181,22 @@ Pour un dirigeant TNS qui peut mettre en place un PEE/PERECO dans sa société (
 
 **Règle d'or** : toujours saturer l'abondement employeur (PEE + PERCO) AVANT d'abonder un PER individuel. L'abondement est de l'argent gratuit — aucun rendement PER individuel n'égale un match à 50-300%.
 
+### Plafond partagé : ce qui consomme le plafond 163 quatervicies
+
+Le plafond de déduction (art. 163 quatervicies) est commun à toutes les enveloppes retraite déductibles. Plusieurs flux le consomment ou le réduisent :
+
+| Flux | Case déclaration | Consomme le plafond ? |
+|------|-----------------|----------------------|
+| Versements volontaires PER individuel | 6NS / 6NT | **Oui** |
+| Versements volontaires PERECO (compartiment 1) | 6NS / 6NT | **Oui** |
+| Abondement employeur PERECO / PERCO | **6QS** | **Oui** — réduit le plafond disponible pour les versements volontaires |
+| Intéressement / participation placés en PERECO | — (non déclarés) | **Non** — exonération séparée, hors plafond |
+| Cotisations obligatoires PERO (compartiment 3) | 6QS | Oui (dans la limite exonérée) |
+
+**Conséquence pratique** : si l'employeur abonde 7 418 € sur le PERECO, ce montant est déclaré en 6QS et réduit d'autant le plafond restant pour les versements volontaires PER individuel. Un salarié qui reçoit le plafond maximum d'abondement PERECO peut se retrouver avec un plafond résiduel nul pour son PER individuel si son plafond global est modeste.
+
+**Pour les TNS** : l'abondement que la société verse sur le PERECO du dirigeant réduit de la même façon le plafond disponible pour un PER individuel — à intégrer dans l'arbitrage (voir `equity-salarial.md` → section TNS).
+
 ## Pièges fréquents
 
 1. **Oublier le plafond** : versement > plafond → fraction non déductible (mais remboursable sans frais ou reportable selon le contrat)
