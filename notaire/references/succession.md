@@ -156,15 +156,50 @@ Référence complète pour le droit des successions : dévolution, droits, abatt
 
 **Base légale** : art. 757 B et 990 I CGI
 
-| Primes versées | Régime | Base légale |
-|----------------|--------|-------------|
-| Avant 70 ans | Abattement 152 500 EUR par bénéficiaire, puis 20% jusqu'à 700 000 EUR, puis 31,25% | art. 990 I CGI |
-| Après 70 ans | Abattement global 30 500 EUR (tous bénéficiaires), puis droits de succession selon le lien | art. 757 B CGI |
+L'assurance-vie est **hors succession** (art. L132-12 Code des assurances). Les capitaux décès sont versés directement aux bénéficiaires désignés. Le régime fiscal dépend de **trois variables** : date de souscription du contrat, âge à la date du versement, et date du versement.
 
-**Points clés :**
-- L'assurance-vie est hors succession (art. L132-12 Code des assurances)
-- Clause bénéficiaire : vérifier sa rédaction (acceptation, démembrement, etc.)
+### Matrice des régimes fiscaux (3 variables)
+
+| Contrat souscrit | Âge à la date du versement | Date du versement | Régime |
+|------------------|:--------------------------:|-------------------|--------|
+| Avant le 20/11/1991 | < 70 ans | Peu importe | **Art. 990 I** : abattement 152 500 EUR/bénéf. |
+| Avant le 20/11/1991 | ≥ 70 ans | Avant le 13/10/1998 | **Art. 990 I** : abattement 152 500 EUR/bénéf. |
+| Avant le 20/11/1991 | ≥ 70 ans | À partir du 13/10/1998 | **Art. 990 I** : abattement 152 500 EUR/bénéf. (régime dérogatoire — contrat pré-1991 prime) |
+| Après le 20/11/1991 | < 70 ans | Peu importe | **Art. 990 I** : abattement 152 500 EUR/bénéf. |
+| Après le 20/11/1991 | ≥ 70 ans | Avant le 13/10/1998 | **Art. 990 I** : abattement 152 500 EUR/bénéf. |
+| Après le 20/11/1991 | ≥ 70 ans | À partir du 13/10/1998 | **Art. 757 B** : abattement global 30 500 EUR, puis droits de succession sur les primes |
+
+**Le seul cas défavorable** (757 B / plafond 30 500 EUR global) : contrat souscrit **après** le 20/11/1991 **ET** primes versées **après** 70 ans **ET** versements effectués **à partir** du 13/10/1998.
+
+**Règle clé pour les contrats pré-1991** : même des primes versées après 70 ans et après le 13/10/1998 relèvent de l'art. 990 I (abattement de 152 500 EUR par bénéficiaire) — le régime dérogatoire favorable s'applique dès lors que le contrat a été souscrit avant le 20/11/1991. Ne pas fermer ces contrats anciens.
+
+### Barèmes 990 I et 757 B
+
+| Régime | Assiette | Abattement | Taux |
+|--------|----------|:----------:|------|
+| Art. 990 I | Capital décès (valeur totale au décès, primes + gains latents) par bénéficiaire | 152 500 EUR/bénéf. | 20% jusqu'à 700 000 EUR, puis 31,25% |
+| Art. 757 B | Primes versées (hors gains) au-delà de l'abattement global | 30 500 EUR global (tous bénéficiaires) | Droits de succession selon le lien |
+
+**Sous l'art. 757 B, les gains (intérêts et PV) sont exonérés** — seules les primes sont taxées.
+
+### PV latentes et gains non réalisés au décès
+
+**Le décès n'est pas un fait générateur de l'IR ni des prélèvements sociaux (PS).** Les gains latents ne sont jamais soumis à la fiscalité des rachats.
+
+| Support | Sort des gains latents au décès |
+|---------|----------------------------------|
+| Unités de compte (UC) | PV latentes définitivement exonérées d'IR et de PS — elles "s'effacent" fiscalement |
+| Fonds en euros | PS déjà prélevés annuellement (au fil de l'eau) ; IR jamais dû (pas de rachat) |
+
+**Conséquence pratique** : une AV avec 500 000 EUR de PV latentes en UC transmet ces PV sans IR ni PS aux bénéficiaires. La seule fiscalité applicable est successorale (990 I ou 757 B), qui s'applique sur la valeur totale du capital (incluant les gains latents) mais à des taux et abattements spécifiques, sans rapport avec la fiscalité des rachats de vivant (PFU 30% ou barème).
+
+**Avantage décisif de l'AV pour la transmission** : cumul de l'abattement 152 500 EUR/bénéficiaire ET de l'effacement des PV latentes sur UC.
+
+### Autres points clés
+
+- Clause bénéficiaire : vérifier sa rédaction (acceptation, démembrement possible pour optimiser la transmission)
 - Contrats non dénoués au décès du conjoint : régime spécifique selon le régime matrimonial
+- Primes manifestement excessives : risque de réintégration dans la succession (art. L132-13 Code des assurances)
 
 ## Options du Conjoint Survivant
 

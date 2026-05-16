@@ -123,15 +123,32 @@ Taux dégressif selon ancienneté du contrat. Prélèvement libératoire (PFL) o
 
 ### Option barème
 
-**Avantageuse si TMI ≤ 11%** — le barème peut être meilleur que le PFU après 8 ans (car abattement annuel + taux IR faible).
+**Avantageuse si TMI ≤ 11%** — le barème peut être meilleur que le PFU après 8 ans (car taux IR faible).
 
 Option **globale** et irrévocable pour l'année.
+
+**Important** : l'abattement annuel (4 600 EUR / 9 200 EUR après 8 ans) s'applique **aussi bien au PFU qu'au barème** — ce n'est pas un avantage propre à l'option barème. La comparaison PFU vs barème se fait donc à abattement égal : seul le taux d'IR marginal diffère (7,5% sous PFU vs TMI sous barème).
 
 ### Contrats très anciens (avant 1983)
 
 Régime de faveur pour les contrats souscrits **avant le 1er janvier 1983** : exonération totale d'IR sur les gains.
 
 Extrêmement rare — à vérifier si le contrat est très ancien.
+
+## PV Latentes au Décès — Fiscalité Spécifique
+
+> **Périmètre** : ce qui suit concerne la fiscalité au décès de l'assuré. La transmission successorale AV (990 I / 757 B) est couverte par le skill `notaire`.
+
+**Le décès n'est pas un fait générateur de l'IR ni des prélèvements sociaux.** Les gains non réalisés au moment du décès ne sont jamais soumis à la fiscalité des rachats.
+
+| Support | Sort des gains latents au décès |
+|---------|----------------------------------|
+| Unités de compte (UC) | PV latentes définitivement exonérées d'IR et de PS — elles "s'effacent" |
+| Fonds en euros | PS déjà prélevés annuellement (au fil de l'eau) ; IR jamais dû (pas de rachat) |
+
+**Conséquence** : un contrat AV avec 300 000 EUR de PV latentes en UC transmet ces gains sans IR (12,8%) ni PS (17,2%). La seule taxation applicable est successorale (990 I ou 757 B), de nature différente.
+
+C'est l'un des avantages les plus méconnus de l'AV pour la transmission : **les PV latentes sur UC ne seront jamais fiscalisées à l'IR/PS si le contrat se dénoue par décès**.
 
 ## Stratégies courantes
 

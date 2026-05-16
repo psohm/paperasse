@@ -30,9 +30,22 @@
 
 - **Hors succession** (art. L132-12 Code des assurances)
 - Clause bénéficiaire : vérifier systématiquement (acceptée ou non)
-- Primes avant 70 ans : abattement **152 500 EUR/bénéficiaire** puis 20% jusqu'à 700k, 31,25% au-delà (art. 990 I CGI)
-- Primes après 70 ans : abattement global **30 500 EUR** puis droits de succession sur le surplus des primes (art. 757 B CGI). Les intérêts sont exonérés.
-- Attention aux **primes manifestement excessives** (réintégration possible dans la succession)
+- Le régime fiscal dépend de **3 variables** : date de souscription, âge au versement, date du versement — voir le tableau complet dans `succession.md`
+
+**Régime de droit commun :**
+- Primes avant 70 ans (ou contrat pré-20/11/1991 + primes avant 13/10/1998) : abattement **152 500 EUR/bénéficiaire** puis 20%/31,25% (art. 990 I CGI)
+- Primes après 70 ans sur contrat post-20/11/1991 et versements post-13/10/1998 : abattement global **30 500 EUR** puis droits de succession sur les primes uniquement — les gains sont exonérés (art. 757 B CGI)
+
+**Contrats souscrits avant le 20/11/1991 — cas dérogatoire favorable :**
+- Même les primes versées **après 70 ans** et **après le 13/10/1998** relèvent de l'art. 990 I (abattement 152 500 EUR/bénéf.)
+- Le plafond défavorable de 30 500 EUR ne s'applique **jamais** à ces contrats anciens
+- **Ne jamais fermer un contrat pré-1991** sans vérifier cet avantage successoral
+
+**PV latentes au décès :**
+- UC : les plus-values latentes sont définitivement exonérées d'IR et de PS (le décès n'est pas un fait générateur)
+- Fonds € : PS prélevés chaque année au fil de l'eau ; IR jamais dû
+
+- Attention aux **primes manifestement excessives** (réintégration possible dans la succession, art. L132-13 Code des assurances)
 
 ## SCI : IR vs IS et Impact sur la Plus-Value
 

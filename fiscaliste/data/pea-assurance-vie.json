@@ -37,6 +37,46 @@
     }
   },
 
+  "assurance_vie_deces": {
+    "description": "Fiscalité de la transmission AV au décès (distincte des rachats de vivant). Voir aussi skill notaire.",
+    "base_legale": ["art. 990 I CGI", "art. 757 B CGI", "art. L132-12 Code des assurances"],
+    "hors_succession": true,
+
+    "matrice_regimes": {
+      "description": "3 variables déterminent le régime applicable : date souscription contrat, âge au versement, date du versement",
+      "seul_cas_defavorable_757B": {
+        "condition": "Contrat souscrit APRÈS le 20/11/1991 ET primes versées APRÈS 70 ans ET versements À PARTIR du 13/10/1998",
+        "regime": "art. 757 B",
+        "abattement": "30 500 EUR global (tous bénéficiaires confondus)",
+        "assiette": "Primes uniquement (les gains/intérêts sont exonérés)",
+        "imposition_surplus": "Droits de succession selon le lien de parenté"
+      },
+      "tous_autres_cas_990I": {
+        "condition": "Tout autre cas : contrat pré-20/11/1991, OU primes avant 70 ans, OU versements avant 13/10/1998",
+        "regime": "art. 990 I",
+        "abattement_par_beneficiaire": 152500,
+        "taux": [
+          { "tranche": "0 à 700 000 EUR (après abattement)", "taux": "20%" },
+          { "tranche": "Au-delà de 700 000 EUR", "taux": "31,25%" }
+        ],
+        "assiette": "Capital décès total (primes + gains latents)"
+      }
+    },
+
+    "contrats_pre_1991_derogation": {
+      "description": "Contrats souscrits avant le 20/11/1991 : régime dérogatoire favorable — même les primes versées après 70 ans et après le 13/10/1998 relèvent de l'art. 990 I",
+      "conseil": "Ne jamais fermer un contrat pré-1991 sans vérifier cet avantage successoral",
+      "source": "BOI-RESS-000009 / art. 990 I CGI — interprétation date de souscription"
+    },
+
+    "pv_latentes_deces": {
+      "fait_generateur": false,
+      "description": "Le décès n'est pas un fait générateur de l'IR ni des PS. Les PV latentes sur UC s'effacent définitivement.",
+      "uc": "PV latentes exonérées d'IR et de PS — jamais imposées",
+      "fonds_euros": "PS prélevés annuellement au fil de l'eau (déjà acquittés) ; IR jamais dû"
+    }
+  },
+
   "assurance_vie_rachats": {
     "description": "Fiscalité des rachats de vivant (distincte de la transmission — voir skill notaire)",
 
