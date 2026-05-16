@@ -133,24 +133,16 @@ Chaque cas ouvre un délai de 6 mois pour effectuer le retrait (sauf décès et 
 
 #### Cas de déblocage anticipé PERCO / PERO
 
-Le PERCO/PERO est une enveloppe retraite — les cas de sortie anticipée sont **beaucoup plus restreints** que le PEE (art. L. 3334-14 Code du travail et art. L. 224-4 CMF pour le PERO).
+Le PERCO/PERO est une enveloppe retraite — les cas de sortie anticipée sont beaucoup plus restreints que le PEE (art. L. 3334-14 Code du travail et art. L. 224-4 CMF pour le PERO) :
 
-| Cas | PEE | PERCO / PERO |
-|-----|-----|-------------|
-| Décès (bénéficiaire ou conjoint) | Oui | Oui |
-| Invalidité (bénéficiaire, conjoint ou enfant) | Oui | Oui (2e ou 3e catégorie SS) |
-| Surendettement | Oui | Oui |
-| Expiration des droits à l'assurance chômage | Non | Oui |
-| Cessation d'activité non salariée (liquidation judiciaire) | Non | Oui |
-| Acquisition de la résidence principale | Oui | **PERO uniquement** (compartiment versements volontaires) |
-| Mariage / PACS | Oui | **Non** |
-| Naissance 3e enfant | Oui | **Non** |
-| Divorce / séparation | Oui | **Non** |
-| Rupture du contrat de travail | Oui | **Non** |
-| Création / reprise d'entreprise | Oui | **Non** |
-| Violences conjugales | Oui | **Non** |
+- Décès (bénéficiaire ou conjoint/PACS)
+- Invalidité 2e ou 3e catégorie SS (bénéficiaire, conjoint ou enfants)
+- Surendettement
+- Expiration des droits à l'assurance chômage
+- Cessation d'activité non salariée suite à liquidation judiciaire
+- Acquisition de la résidence principale (**PERO uniquement** — compartiment versements volontaires, pas intéressement/participation/abondement)
 
-**Point d'attention PERO vs PERCO** : depuis la loi Pacte, le PERO (PER d'entreprise collectif) remplace progressivement le PERCO. L'acquisition de la résidence principale est un cas de déblocage uniquement pour le compartiment "versements volontaires" du PERO — pas pour les compartiments intéressement/participation/abondement.
+Mariage, naissance, divorce, rupture de contrat, création d'entreprise, violences conjugales : **non déblocables** sur PERCO/PERO.
 
 ### Arbitrage PEE/PERCO vs PER individuel
 
