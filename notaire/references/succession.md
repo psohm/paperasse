@@ -172,14 +172,6 @@ Trois variables déterminent le régime applicable :
 - La date 20/11/1991 (date du contrat) détermine si les versements post-70 ans bénéficient de l'art. 990 I (152 500 EUR/bénéf.) ou de l'art. 757 B moins favorable (30 500 EUR global).
 - Le seul cas défavorable est : contrat post-20/11/1991 + versements post-13/10/1998 + après 70 ans → art. 757 B.
 
-**Exemple** (contrat ouvert en 1989, bénéficiaire unique = un enfant) :
-
-| Versements | Régime | Fiscalité |
-|-----------|--------|-----------|
-| 200 000 EUR avant le 13/10/1998 | Exonération totale | 0 EUR |
-| 200 000 EUR après le 13/10/1998 | Abattement 152 500 EUR → 47 500 EUR taxés à 20% | 9 500 EUR |
-| **Total transmis : 400 000 EUR** | | **Impôt : 9 500 EUR** |
-
 ### Points clés communs
 
 - L'assurance-vie est hors succession (art. L132-12 Code des assurances)
