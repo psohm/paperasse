@@ -70,7 +70,7 @@ Deux régimes distincts, deux articles différents. S'appliquent aux enfants min
 | Type | Article | Conditions | Plafond 2025 |
 |------|---------|------------|--------------|
 | Apprentis (contrat d'apprentissage L. 6221-1 CT) et stagiaires (L. 124-6 Code éduc.) | art. 81 bis CGI | Contrat formel requis | SMIC annuel = **21 622 €** |
-| Jobs étudiants | art. 81, 36° CGI | ≤ 25 ans au 1er janvier ; activité pendant l'année scolaire **ou** congés. **Sur option du contribuable** | 3 × SMIC mensuel = **5 405 €** |
+| Jobs étudiants | art. 81, 36° CGI | ≤ 25 ans au 1er janvier ; activité exercée pendant l'année scolaire/universitaire **ou** durant les congés scolaires/universitaires. **Sur option du contribuable** | 3 × SMIC mensuel = **5 405 €** |
 
 **Hors champ** : le contrat de professionnalisation n'ouvre pas droit à l'exonération art. 81 bis — la rémunération est imposable en totalité (souvent confondu avec le contrat d'apprentissage).
 
@@ -80,7 +80,7 @@ Deux régimes distincts, deux articles différents. S'appliquent aux enfants min
 
 Si un même employeur verse à la fois des revenus étudiants et d'autres revenus, **dupliquer la ligne** pour déclarer séparément les deux natures.
 
-**Valeurs SMIC** : revalorisées au 1er janvier, et en cours d'année si l'inflation hors tabac dépasse +2% (art. L3231-5 CT) — vérifier sur [legifrance.gouv.fr](https://www.legifrance.gouv.fr).
+**Valeurs SMIC** : revalorisées au 1er janvier, et en cours d'année si l'indice des prix à la consommation national atteint +2% par rapport au niveau ayant déclenché la dernière revalorisation (art. L3231-5 CT) — vérifier sur [legifrance.gouv.fr](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902835).
 
 ## Application du barème progressif
 
