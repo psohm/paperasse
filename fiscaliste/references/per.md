@@ -129,6 +129,44 @@ L'abondement est un complément versé par l'entreprise pour chaque euro versé 
 - Versements : case 6NS (déclarant 1) / 6NT (déclarant 2) sur la 2042
 - Plafond calculé automatiquement par la DGFIP (figure sur l'avis d'imposition N-1, rubrique "Plafond pour l'épargne retraite")
 
+## PER TNS (ex-Madelin) : spécificités du travailleur non salarié
+
+Le PER individuel (art. 163 quatervicies CGI) est accessible à tous, mais les TNS (gérant majoritaire SARL, gérant EURL, EI) disposent en plus du **PER TNS issu du contrat Madelin** (art. 154 bis CGI), avec un plafond de déduction spécifique.
+
+### Plafond de déduction PER TNS (art. 154 bis CGI)
+
+Plafond = **10% du bénéfice imposable** (dans la limite de 8 PASS) **+ 15% de la fraction du bénéfice comprise entre 1 PASS et 8 PASS**.
+
+| Composante | Calcul | Plafond 2025 |
+|------------|--------|--------------|
+| Fraction 10% | 10% × bénéfice (max 8 PASS) | Max 37 094 € |
+| Fraction 15% | 15% × (bénéfice − 46 368 €) si bénéfice > PASS | Variable |
+| Plancher | Même plancher que PER individuel | 4 710 € |
+
+Le plafond TNS est donc potentiellement **supérieur** au plafond du PER individuel (37 680 €) pour les bénéfices élevés. Consulter l'avis d'imposition pour le plafond exact calculé par la DGFIP.
+
+### Double avantage TNS
+
+Les cotisations versées sur un PER TNS sont :
+1. Déductibles du revenu professionnel (réduction IR)
+2. Déductibles de l'assiette des cotisations sociales TNS (réduction cotisations URSSAF)
+
+Ce double avantage est plus puissant que le PER individuel (qui ne joue que sur l'IR). Le taux effectif d'économie peut atteindre TMI + taux marginal de cotisations TNS.
+
+### Arbitrage PER TNS vs PEE/PERECO pour le dirigeant TNS
+
+Pour un dirigeant TNS qui peut mettre en place un PEE/PERECO dans sa société (voir `equity-salarial.md` → section dédiée TNS) :
+
+**Ordre de priorité recommandé :**
+1. Saturer l'abondement PEE + PERECO (11 127 € pour 2025) — double exonération IS + cotisations, liquidité PEE après 5 ans
+2. PER TNS (art. 154 bis) pour les montants supplémentaires — plafond plus élevé, double avantage IR + cotisations
+3. PER individuel (art. 163 quatervicies) en complément si plafond Madelin atteint
+
+**Pourquoi PEE/PERECO d'abord ?**
+- L'abondement société est exonéré de cotisations TNS côté dirigeant ET de charges patronales côté société
+- La sortie PEE est en PFU sur les gains (pas au barème) — avantage si TMI retraite = TMI actuel
+- Liquidité supérieure : PEE débloquable après 5 ans (nombreux cas anticipés)
+
 ## Différence PER individuel vs PERCO / PERO
 
 - **PER individuel** (présent doc) : versements volontaires, déductibles dans la limite du plafond, sortie imposée au barème.

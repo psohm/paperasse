@@ -124,6 +124,161 @@ Enveloppe collective distincte du PER individuel.
 
 **Règle d'or** : ne jamais abonder un PER individuel avant d'avoir saturé l'abondement employeur PEE + PERCO. L'abondement est de l'argent gratuit.
 
+## Épargne salariale pour TNS : PEE/PERECO dans sa propre société
+
+Section dédiée au gérant TNS (gérant majoritaire SARL, gérant EURL à l'IS) qui met en place un PEE/PERECO dans sa propre société — situation distincte du salarié classique.
+
+Voir `data/equity-salarial.json` → `pee_perco_tns` pour les paramètres chiffrés.
+
+### Éligibilité selon la forme juridique
+
+| Forme juridique | Régime social dirigeant | Éligibilité PEE/PERECO | Notes |
+|----------------|------------------------|------------------------|-------|
+| SARL (gérant majoritaire > 50%) | TNS | **Oui** | Inclus explicitement depuis loi Pacte |
+| EURL à l'IS (gérant associé unique) | TNS | **Oui** | Idem |
+| EURL à l'IR | TNS | Oui (avec précautions) | Déductibilité indirecte — voir piège n°4 |
+| SAS / SASU (président) | Assimilé salarié | Oui (droit commun salarié) | Pas de cotisations TNS sur dividendes |
+| EI | TNS | **Non** | Pas de personnalité morale distincte |
+
+**Loi Pacte (art. 150, loi n° 2019-486 du 22 mai 2019)** : les entreprises sans salarié (hors dirigeant) peuvent mettre en place un PEE/PERECO. Les mandataires sociaux — gérant de SARL, gérant d'EURL — sont explicitement inclus parmi les bénéficiaires potentiels, même en l'absence de tout autre salarié.
+
+**Décret n° 2021-1131 du 30 août 2021** : pour les entreprises sans salarié, le plan peut être mis en place par décision unilatérale de l'employeur (DUE) — sans accord collectif. Dépôt obligatoire auprès de la DREETS ; à défaut, l'exonération ne s'applique pas.
+
+**Condition de présence de salariés** : supprimée depuis loi Pacte. Avant 2019, un salarié (hors dirigeant) était requis pour mettre en place un accord d'intéressement.
+
+### Mécanique de l'abondement TNS
+
+**Circuit :**
+1. Le dirigeant TNS effectue un versement volontaire sur le PEE/PERECO (depuis sa rémunération nette déjà taxée)
+2. La société verse l'abondement (charge déductible du résultat IS)
+3. L'abondement est exonéré de cotisations sociales TNS et d'IR dans les plafonds
+
+**Plafonds 2025 (PASS 2025 = 46 368 €) :**
+
+| Plan | Plafond abondement annuel | Base |
+|------|--------------------------|------|
+| PEE | 3 709 € | 8% × PASS |
+| PERECO | 7 418 € | 16% × PASS |
+| **Total cumulable** | **11 127 €** | PEE + PERECO = plafonds distincts non fongibles |
+
+L'abondement de la société ne peut dépasser 3× le versement du dirigeant (règle générale des plans).
+
+**Déductibilité IS :**
+L'abondement est une charge déductible du résultat (compte 6474 — charges de personnel liées à la participation et à l'intéressement, ou assimilé). Économie IS = abondement × taux IS (25%, ou 15% sur les 42 500 premiers € pour les PME éligibles).
+
+**Exonération cotisations sociales dans les plafonds :**
+- Côté société : pas de cotisations patronales sur l'abondement
+- Côté dirigeant TNS : l'abondement n'est pas intégré dans l'assiette des cotisations sociales TNS
+- Côté IR : abondement exclu du revenu imposable (art. 81-18° CGI)
+
+**Exemple chiffré — gérant SARL IS, IS 25%, cotisations TNS ≈ 42% :**
+
+Pour un abondement plafonné PEE de 3 709 € :
+- Coût net société après IS : 3 709 × (1 − 25%) = **2 782 €**
+- Économie cotisations TNS évitées sur cette somme : 3 709 × 42% ≈ **1 558 €** (si la société avait versé cet équivalent en rémunération)
+- Abondement reçu dans le PEE : **3 709 €**, bloqué 5 ans, sorti exonéré IR (PS 17,2% sur les gains seulement)
+
+### Arbitrage PEE/PERECO vs PER TNS (ex-Madelin)
+
+Deux enveloppes concurrentes pour l'optimisation fiscale du dirigeant TNS :
+
+| Critère | PEE / PERECO (abondement) | PER TNS (ex-Madelin, art. 154 bis CGI) |
+|---------|--------------------------|----------------------------------------|
+| Déduction du résultat société | Oui (charge IS) | Oui (cotisations déductibles) |
+| Économie cotisations TNS | Oui, dans plafonds | Oui (assiette cotisations réduite) |
+| Exonération IR entrée | Oui (abondement exclu du revenu) | Oui (déduction revenu professionnel) |
+| Plafond annuel | 11 127 € (PEE + PERECO) | 10% bénéfice + 15% fraction > PASS (plafond souvent plus élevé pour fort bénéfice) |
+| Liquidité | PEE : déblocage après 5 ans (cas anticipés nombreux) | Bloqué jusqu'à la retraite |
+| Sortie | PEE : exo IR, PS 17,2% gains / PERECO : barème + PFU gains | Barème IR (anciens Madelin : rente obligatoire) |
+| Complexité mise en place | DUE ou accord + dépôt DREETS | Souscription contrat individuel |
+
+**Recommandation pour TMI 30-41% :**
+1. Saturer d'abord PEE + PERECO (11 127 €) — double exonération IS + cotisations, liquidité supérieure
+2. Puis PER TNS (ex-Madelin) pour les montants supplémentaires si le bénéfice le justifie
+3. Enfin PER individuel (163 quatervicies) en complément, plafond partiellement commun
+
+**Recommandation pour TMI 45% :**
+- L'avantage du PER diminue si le TMI à la retraite reste élevé (report d'imposition, pas exonération)
+- PEE reste attractif : sortie en PFU sur gains (pas au barème), horizon 5 ans seulement
+
+### Conjoint salarié : leviers additionnels
+
+Quand le gérant embauche son conjoint, de nouveaux outils de rémunération optimisée deviennent accessibles.
+
+#### Prime de Partage de la Valeur (PPV)
+
+Dispositif issu de la loi n° 2022-1158 du 16 août 2022, pérennisé par la loi n° 2023-1107 du 29 novembre 2023 (transposition ANI).
+
+- **Bénéficiaires** : tous les salariés (dont le conjoint salarié). Le dirigeant TNS ne peut pas en bénéficier lui-même.
+- **Plafond exonération** : 3 000 € par bénéficiaire (ou 6 000 € si accord d'intéressement en vigueur)
+- **Exonérations dans le plafond** : cotisations sociales patronales et salariales
+- **Exonération IR** : pour les salariés dont la rémunération est < 3 SMIC (≈ 5 430 €/mois brut 2025) — jusqu'au 31/12/2026
+- **Au-delà du plafond ou > 3 SMIC** : imposable à l'IR et soumis aux cotisations sociales comme une prime ordinaire
+- **Pas de condition d'accord** : versable par décision unilatérale de l'employeur
+
+Intérêt pour la SARL unipersonnelle avec conjoint salarié : la PPV permet de verser jusqu'à 3 000 € (ou 6 000 €) sans cotisations ni IR pour le conjoint, déductible IS pour la société.
+
+#### Intéressement et participation
+
+Dès qu'un salarié (le conjoint) est embauché, l'accord d'intéressement s'applique à tous les salariés.
+
+| Dispositif | Exonération cotisations | Exonération IR | Plafond par bénéficiaire |
+|------------|------------------------|----------------|--------------------------|
+| Intéressement (placé PEE) | Oui | Oui | 75% PASS ≈ 34 776 € (2025) |
+| Participation (placée PEE) | Oui | Oui | 75% PASS ≈ 34 776 € (2025) |
+| Intéressement (non placé) | Oui | Non (IR) | Idem |
+
+L'intéressement ouvre également droit à un abondement employeur majoré (plafond PEE passe de 3× à toujours 3× le versement salarié, mais le plafond absolu reste 8% PASS). La PPV versée avec un accord d'intéressement est plafonnée à 6 000 € (au lieu de 3 000 €).
+
+#### Mutuelle santé famille
+
+L'employeur est tenu de proposer une complémentaire santé collective obligatoire (art. L. 911-7 CSS) avec prise en charge patronale ≥ 50% de la cotisation.
+
+**Option mutuelle famille :**
+- La société peut souscrire une mutuelle "famille" couvrant le salarié (conjoint) + enfants + le conjoint du salarié (i.e. le gérant)
+- La cotisation patronale est déductible IS et exonérée de cotisations sociales dans la limite de 6% du PASS + 1,5% par enfant à charge (art. 83-1° quater CGI et art. D. 242-1 CSS)
+- Le gérant TNS est couvert en tant que "conjoint" du salarié — sans être lui-même salarié
+
+**Dispense d'adhésion du conjoint salarié ailleurs :**
+Si le conjoint est par ailleurs salarié d'une autre entreprise et bénéficie à ce titre d'une mutuelle collective obligatoire, il peut demander une dispense d'adhésion à la mutuelle de la SARL (art. R. 242-1-6 CSS). Conditions à réunir :
+- La couverture existante est **obligatoire** chez l'autre employeur (pas une couverture optionnelle)
+- La dispense doit être demandée par écrit et conservée au dossier RH
+- Le nombre d'heures du contrat ne doit pas être déconnant (temps partiel très faible → couverture parfois insuffisante)
+
+**Point de vigilance** : une couverture obligatoire minimale chez l'autre employeur peut être moins avantageuse qu'une mutuelle famille bien choisie. Comparer avant de décider.
+
+### Pièges spécifiques TNS
+
+**1. Dépassement des plafonds d'abondement**
+La fraction d'abondement excédant 8% PASS (PEE) ou 16% PASS (PERECO) est réintégrée dans l'assiette des cotisations sociales TNS et dans l'IR. Surveiller en fin d'année.
+
+**2. Versement volontaire ≠ abondement**
+Le versement volontaire du dirigeant sur le PEE provient de sa rémunération nette déjà taxée — il n'est pas lui-même exonéré. Seul l'abondement versé par la société bénéficie de l'exonération. Ne pas confondre les deux flux.
+
+**3. Dividendes SARL et seuil 10% du capital**
+Pour un gérant majoritaire de SARL, les dividendes excédant 10% du (capital + comptes courants + primes d'émission) sont soumis aux cotisations sociales TNS (art. L. 131-6 CSS). Mécanisme indépendant du PEE/PERECO, mais à intégrer dans l'optimisation globale — des dividendes élevés déjà soumis aux cotisations réduisent l'intérêt de certaines stratégies.
+
+**4. EURL à l'IR : déductibilité indirecte**
+Si l'EURL est soumise à l'IR (transparence fiscale), l'abondement réduit le bénéfice de la société qui remonte directement dans le revenu de l'associé unique. L'effet est réel mais mécanique moins lisible. Vérifier le régime IS/IR de l'EURL avant la mise en place.
+
+**5. Formalisme obligatoire**
+- Mise en place par accord collectif ou DUE (post loi Pacte pour entreprises sans salarié)
+- Dépôt auprès de la DREETS dans les délais légaux
+- En l'absence de dépôt conforme : l'abondement est requalifié en complément de rémunération → cotisations + IR
+
+**6. SAS/SASU : régime différent**
+Le président de SAS/SASU est assimilé salarié. Pas de cotisations TNS sur les dividendes (quel que soit le montant). L'arbitrage PEE vs PER vs dividendes est distinct — ne pas appliquer les règles TNS à une SASU.
+
+### Références légales
+
+- **Code du travail** : art. L. 3332-1 et s. (PEE), L. 3332-2 (bénéficiaires, mandataires sociaux), L. 3334-1 et s. (PERECO), L. 3314-1 et s. (intéressement), L. 3323-1 et s. (participation)
+- **Loi Pacte** : loi n° 2019-486 du 22 mai 2019, art. 150 (ouverture aux entreprises sans salarié)
+- **Décret** : n° 2021-1131 du 30 août 2021 (modalités entreprises sans salarié)
+- **PPV** : loi n° 2022-1158 du 16 août 2022 ; loi n° 2023-1107 du 29 novembre 2023
+- **CGI** : art. 81-18° (exonération IR abondement), art. 83-1° quater (mutuelle collective), art. 154 bis (PER TNS / Madelin)
+- **CSS** : art. L. 131-6 (assiette cotisations TNS, dont dividendes SARL > 10%), L. 242-1 (exonération cotisations sur abondement), L. 911-7 (mutuelle obligatoire), R. 242-1-6 (dispense d'adhésion)
+- **BOFiP** : BOI-RSA-ES-10-10-20 (épargne salariale, abondement)
+
 ## Quotient pour revenus exceptionnels
 
 Vesting massif, cession d'entreprise, indemnité de départ → à activer.
