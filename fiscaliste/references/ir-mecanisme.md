@@ -80,7 +80,7 @@ Deux régimes distincts, deux articles différents. S'appliquent aux enfants min
 
 Si un même employeur verse à la fois des revenus étudiants et d'autres revenus, **dupliquer la ligne** pour déclarer séparément les deux natures.
 
-**Valeurs SMIC** : revalorisées au 1er janvier, et en cours d'année si l'indice des prix à la consommation national atteint +2% par rapport au niveau ayant déclenché la dernière revalorisation (art. L3231-5 CT) — vérifier sur [legifrance.gouv.fr](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902835).
+**Valeurs SMIC** : revalorisées au 1er janvier, et en cours d'année si l'indice des prix à la consommation national atteint +2% par rapport au niveau ayant déclenché la dernière revalorisation ([art. L3231-5 CT](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902835)).
 
 ## Application du barème progressif
 
