@@ -34,6 +34,12 @@
 - Primes après 70 ans : abattement global **30 500 EUR** puis droits de succession sur le surplus des primes (art. 757 B CGI). Les intérêts sont exonérés.
 - Attention aux **primes manifestement excessives** (réintégration possible dans la succession)
 
+**Contrats souscrits avant le 20 novembre 1991 — régime dérogatoire :**
+- Versements avant le 13/10/1998 : **exonération totale** de droits de succession
+- Versements après le 13/10/1998 : abattement **152 500 EUR/bénéficiaire** même si les primes ont été versées après 70 ans (art. 990 I, pas art. 757 B)
+- Ne jamais clôturer ces vieux contrats : le régime est attaché au contrat, un rachat total le détruit définitivement
+- Voir `succession.md` § "Assurance-Vie" pour le détail et un exemple chiffré
+
 ## SCI : IR vs IS et Impact sur la Plus-Value
 
 | | SCI à l'IR | SCI à l'IS |

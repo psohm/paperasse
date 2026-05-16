@@ -156,15 +156,44 @@ Référence complète pour le droit des successions : dévolution, droits, abatt
 
 **Base légale** : art. 757 B et 990 I CGI
 
+### Régime général (contrats souscrits à partir du 20 novembre 1991)
+
 | Primes versées | Régime | Base légale |
 |----------------|--------|-------------|
 | Avant 70 ans | Abattement 152 500 EUR par bénéficiaire, puis 20% jusqu'à 700 000 EUR, puis 31,25% | art. 990 I CGI |
-| Après 70 ans | Abattement global 30 500 EUR (tous bénéficiaires), puis droits de succession selon le lien | art. 757 B CGI |
+| Après 70 ans | Abattement global 30 500 EUR (tous bénéficiaires), puis droits de succession selon le lien. Les intérêts sont exonérés. | art. 757 B CGI |
 
-**Points clés :**
+### Contrats souscrits avant le 20 novembre 1991 — régime dérogatoire
+
+Deux dates charnières à croiser : la date d'ouverture du contrat (avant/après le 20/11/1991) et la date des versements (avant/après le 13/10/1998).
+
+| Date des versements | Régime fiscal au décès |
+|--------------------|------------------------|
+| Avant le 13 octobre 1998 | **Exonération totale** de droits de succession, quel que soit l'âge du souscripteur |
+| Après le 13 octobre 1998 | Abattement **152 500 EUR par bénéficiaire** (art. 990 I CGI), même si les primes ont été versées après 70 ans |
+
+**Avantage clé** : pour les contrats ouverts avant le 20/11/1991, les versements effectués **après 70 ans** relèvent de l'art. 990 I (abattement individuel 152 500 EUR), et non de l'art. 757 B (abattement global 30 500 EUR). C'est nettement plus favorable.
+
+**Exemple** (contrat ouvert en 1989, bénéficiaire unique = un enfant) :
+
+| Versements | Régime | Fiscalité |
+|-----------|--------|-----------|
+| 200 000 EUR avant le 13/10/1998 | Exonération totale | 0 EUR |
+| 200 000 EUR après le 13/10/1998 | Abattement 152 500 EUR → 47 500 EUR taxés à 20% | 9 500 EUR |
+| **Total transmis : 400 000 EUR** | | **Impôt : 9 500 EUR** |
+
+**Points de vigilance :**
+- Le régime dérogatoire est attaché au contrat, pas au souscripteur : des versements récents sur un vieux contrat en bénéficient.
+- Un rachat total clôture le contrat → perte définitive du régime dérogatoire.
+- La Cour de cassation a admis l'adhésion d'enfants ou petits-enfants à un vieux contrat pour leur faire bénéficier de ce régime (à vérifier selon les conditions de l'assureur).
+- Exonération totale si le bénéficiaire est le conjoint survivant ou le partenaire pacsé (art. 796-0 bis CGI), quelle que soit la date du contrat.
+
+### Points clés communs
+
 - L'assurance-vie est hors succession (art. L132-12 Code des assurances)
 - Clause bénéficiaire : vérifier sa rédaction (acceptation, démembrement, etc.)
 - Contrats non dénoués au décès du conjoint : régime spécifique selon le régime matrimonial
+- Primes manifestement excessives : réintégration possible dans la succession (Cass. civ.)
 
 ## Options du Conjoint Survivant
 
