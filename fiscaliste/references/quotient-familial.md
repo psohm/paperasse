@@ -175,8 +175,16 @@ l'exonération ne couvre pas la pension.
 - Si l'enfant n'était pas imposable, la pension peut le faire basculer dans l'imposition
 - La pension augmente le RFR de l'enfant (peut réduire l'accès aux aides ci-dessus)
 
-Pour un foyer en **TMI 30 % ou plus** et un enfant faiblement imposable, la pension reste
-souvent avantageuse. Pour un foyer en **TMI 11 %**, le rattachement gagne presque toujours.
+**Break-even à TMI 30 %** (enfant non imposable) : rattachement = pension si pension ≈ 6 000 €
+(plafond_demi_part ÷ 30 %). En dessous, le rattachement gagne ; au-dessus, la pension gagne.
+
+**Attention franchissement de tranche** : si la déduction de pension fait descendre le RNI
+sous la frontière de tranche (29 579 € × nombre de parts), une partie ne vaut que 11 % au lieu
+de 30 %. Le gain réel est inférieur à pension × TMI, et le break-even effectif dépasse 6 000 €.
+À chiffrer tranche par tranche — le rattachement reste compétitif bien au-delà du break-even apparent.
+
+Pour un foyer en **TMI 11 %**, le rattachement gagne presque toujours (break-even > 16 000 €,
+hors plafond de déduction).
 
 **Exclusif** : impossible de cumuler rattachement et déduction de pension alimentaire pour
 le même enfant.
