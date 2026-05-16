@@ -105,6 +105,8 @@ En versant aujourd'hui dans un PER, on accepte de **ne pas connaître les condit
 - Le TMI à la retraite dépend de la pension, des revenus du patrimoine, de la composition du foyer
 - Les règles fiscales sur les PER peuvent évoluer (c'est arrivé avec les PERP, les Madelin)
 
+> **⚠ Changement de résidence fiscale** : si vous quittez la France avant la retraite, la situation se complique. La France conserve un droit d'imposition sur les sommes déduites (retenue à la source sur les distributions à des non-résidents). Le régime exact dépend de la convention fiscale avec le pays de destination — certaines conventions attribuent le droit d'imposer à la France (pays source), d'autres au pays de résidence, certaines prévoient une imposition partagée. Le déblocage anticipé n'est pas autorisé pour ce motif. **Consulter un fiscaliste spécialisé en mobilité internationale avant tout versement significatif si un départ à l'étranger est envisagé.**
+
 **Contraste avec le PEE** : l'abondement est acquis immédiatement, exonéré d'IR de façon certaine, et la sortie après 5 ans est exonérée d'IR selon des règles stables. Pas de pari sur le futur.
 
 ### Cas favorables
