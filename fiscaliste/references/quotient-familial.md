@@ -105,6 +105,11 @@ Taux marginal effectif ≈ (taux_barème × 1,4525). Un foyer à la tranche 11% 
 
 ## Personnes rattachées (enfants majeurs)
 
+C'est l'**enfant** qui demande son rattachement (art. 6-3° CGI) — le parent ne fait qu'accepter
+en le déclarant. La décision appartient donc à l'enfant, qui doit arbitrer entre rattachement
+et autonomie fiscale (RFR propre, accès aux aides). Les deux parties doivent se coordonner
+chaque année.
+
 ### Régime selon la situation de l'enfant
 
 Deux régimes distincts selon la situation de l'enfant rattaché :
@@ -157,9 +162,10 @@ Plafonds de déduction (revenus 2025) — voir `data/bareme-ir-2025.json` → `p
 La pension peut être versée **en espèces ou en nature** (loyer, frais d'inscription, frais médicaux
 payés directement à l'établissement) — les deux entrent dans le même plafond, sur justificatifs.
 
-**Preuve requise** : virements bancaires traçables pour les versements en espèces ; factures ou
-reçus de l'établissement pour les paiements directs. L'administration peut demander à justifier
-le besoin de l'enfant.
+**Preuve requise** : relevés bancaires pour les versements en numéraire (virement, chèque) ;
+factures ou reçus de l'établissement pour les paiements directs à des tiers (loyer, école…).
+Les versements en espèces (cash) sont à proscrire — quasi-impossibles à justifier.
+L'administration peut également demander à justifier le besoin de l'enfant.
 
 **Impact fiscal pour l'enfant** : la pension est imposable chez l'enfant à hauteur du montant
 déduit par le parent (art. 79 CGI), y compris les paiements en nature. Si l'enfant est apprenti,
@@ -175,13 +181,18 @@ l'exonération ne couvre pas la pension.
 - Si l'enfant n'était pas imposable, la pension peut le faire basculer dans l'imposition
 - La pension augmente le RFR de l'enfant (peut réduire l'accès aux aides ci-dessus)
 
-**Break-even à TMI 30 %** (enfant non imposable) : rattachement = pension si pension ≈ 6 000 €
-(plafond_demi_part ÷ 30 %). En dessous, le rattachement gagne ; au-dessus, la pension gagne.
+**Break-even** (enfant non imposable) : si le plafonnement QF est actif — ce qui est probable
+dès lors qu'on envisage cet arbitrage — le gain rattachement est fixe à 1 807 €.
+Le break-even vaut alors **1 807 € ÷ TMI**, soit environ :
+- TMI 30 % → 1 807 ÷ 0,30 → ~6 000 €
+- TMI 41 % → 1 807 ÷ 0,41 → ~4 400 €
+- TMI 11 % → rattachement gagne toujours (break-even théorique > plafond de déduction)
 
 **Attention franchissement de tranche** : si la déduction de pension fait descendre le RNI
 sous la frontière de tranche (29 579 € × nombre de parts), une partie ne vaut que 11 % au lieu
-de 30 %. Le gain réel est inférieur à pension × TMI, et le break-even effectif dépasse 6 000 €.
-À chiffrer tranche par tranche — le rattachement reste compétitif bien au-delà du break-even apparent.
+de 30 %. Le gain réel de la pension est alors inférieur à pension × 30 %, ce qui remonte le
+break-even effectif. À chiffrer tranche par tranche — le rattachement reste compétitif
+bien au-delà du break-even apparent.
 
 Pour un foyer en **TMI 11 %**, le rattachement gagne presque toujours (break-even > 16 000 €,
 hors plafond de déduction).
