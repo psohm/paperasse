@@ -227,7 +227,7 @@ Mariage, naissance, divorce, rupture de contrat, création d'entreprise, violenc
 | PERECO | Abondement employeur sur épargne retraite | En second après PEE max |
 | PER individuel | Déduction RNI (pas de plafond d'abondement) | En complément, après saturation PEE/PERCO |
 
-**Règle d'or** : ne jamais abonder un PER individuel avant d'avoir saturé l'abondement employeur PEE + PERCO. L'abondement est de l'argent gratuit.
+**Règle d'or** : ne jamais abonder un PER individuel avant d'avoir saturé l'abondement employeur PEE + PERECO. La société abonde pour chaque euro versé par le bénéficiaire.
 
 ## Épargne salariale pour TNS : PEE/PERECO dans sa propre société
 

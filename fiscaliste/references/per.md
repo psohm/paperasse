@@ -165,7 +165,7 @@ L'abondement est un complément versé par l'entreprise pour chaque euro versé 
 
 | Dispositif | Avantage |
 |------------|----------|
-| **PEE + abondement** | Prime gratuite de l'employeur + exonération IR sur l'abondement + PFU 17,2 % à la sortie (pas 30 %) |
+| **PEE + abondement** | La société abonde chaque versement + exonération IR sur l'abondement + PFU 17,2 % à la sortie (pas 30 %) |
 | **PERECO + abondement** | Idem + blocage jusqu'à la retraite |
 | **PER individuel** | Uniquement économie d'impôt immédiate × TMI, pas de match employeur |
 
@@ -221,7 +221,7 @@ Pour un dirigeant TNS qui peut mettre en place un PEE/PERECO dans sa société (
 - **PER individuel** (présent doc) : versements volontaires, déductibles dans la limite du plafond, sortie imposée au barème.
 - **PERECO / PEE** (plans d'épargne entreprise) : alimenté par intéressement, participation, abondement employeur. Voir la section Equity salarial listée depuis SKILL.md pour le détail.
 
-**Règle d'or** : toujours saturer l'abondement employeur (PEE + PERECO) AVANT d'abonder un PER individuel. L'abondement est de l'argent gratuit — aucun rendement PER individuel n'égale un match à 50-300%.
+**Règle d'or** : toujours saturer l'abondement employeur (PEE + PERECO) AVANT d'abonder un PER individuel. La société abonde pour chaque euro versé — aucun rendement PER individuel n'égale un match à 50-300%.
 
 ### Plafond partagé : ce qui consomme le plafond 163 quatervicies
 
