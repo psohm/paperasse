@@ -188,7 +188,7 @@ Trois variables déterminent le régime applicable :
 - Primes manifestement excessives : réintégration possible dans la succession (Cass. civ.)
 - Ne jamais clôturer un contrat pre-20/11/1991 : le régime dérogatoire est attaché au contrat, un rachat total le détruit définitivement
 - Exonération totale si le bénéficiaire est le conjoint survivant ou le partenaire pacsé (art. 796-0 bis CGI), quelle que soit la date du contrat
-- La Cour de cassation a admis l'adhésion d'enfants ou petits-enfants à un vieux contrat pour leur faire bénéficier de ce régime (à vérifier selon les conditions de l'assureur)
+- Pour faire bénéficier enfants/petits-enfants du régime dérogatoire : modifier la clause bénéficiaire du vieux contrat en leur faveur (opération courante, pas de changement de souscripteur)
 
 ## Options du Conjoint Survivant
 

@@ -38,7 +38,8 @@
 - Versements avant le 13/10/1998 : **exonération totale** de droits de succession
 - Versements après le 13/10/1998 : abattement **152 500 EUR/bénéficiaire** même si les primes ont été versées après 70 ans (art. 990 I, pas art. 757 B)
 - Ne jamais clôturer ces vieux contrats : le régime est attaché au contrat, un rachat total le détruit définitivement
-- Voir `succession.md` § "Assurance-Vie" pour le détail et un exemple chiffré
+- Pour en faire bénéficier enfants/petits-enfants : modifier la clause bénéficiaire en leur faveur
+- Voir `succession.md` § "Assurance-Vie" pour la matrice complète et un exemple chiffré
 
 ## SCI : IR vs IS et Impact sur la Plus-Value
 
