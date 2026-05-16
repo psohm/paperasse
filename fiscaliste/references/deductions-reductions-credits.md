@@ -81,7 +81,11 @@ Réduction forfaitaire par enfant à charge (ou rattaché) **scolarisé au 31 d�
 
 Montants stables (non indexés annuellement).
 
+**Nature** : réduction d'impôt — non remboursable. Si l'impôt brut est inférieur à la réduction, l'excédent est perdu (contrairement à un crédit d'impôt).
+
 **Conditions** : établissement public ou privé (France ou étranger), ou formation initiale Cned. L'enfant ne doit pas être lié par un contrat de travail ni rémunéré.
+
+**Garde alternée** : la réduction est partagée par moitié entre les deux foyers fiscaux.
 
 **Exclusions explicites** : apprentissage, congé formation, contrat d'études avec l'employeur. Un alternant rattaché au foyer ne peut donc **pas** en bénéficier.
 Source : [service-public.fr — Frais de scolarité (vérifié avril 2026)](https://www.service-public.gouv.fr/particuliers/vosdroits/F9/)
@@ -187,4 +191,5 @@ Les deux jouent sur des couches différentes du calcul.
 - Garde d'enfant : art. 200 quater B CGI
 - Pinel : art. 199 novovicies CGI
 - FCPI : art. 199 terdecies-0 A CGI
+- Frais de scolarité enfants : art. 199 quater F CGI
 - BOFiP : BOI-IR-RICI

@@ -70,6 +70,7 @@
     "exclusions": ["apprentissage", "congé formation", "contrat d'études avec l'employeur"],
     "note": "Montants stables (non indexés annuellement).",
     "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F9/",
+    "bofip": "BOI-IR-RICI-30",
     "source_verifiee": "2026-04-15"
   },
 
