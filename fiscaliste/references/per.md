@@ -71,29 +71,54 @@ Les époux/pacsés soumis à imposition commune peuvent **mutualiser leurs plafo
 
 ## Arbitrage : le PER est-il vraiment utile ?
 
-**Le PER est un REPORT d'imposition, pas une exonération.**
+**Le PER est un report d'imposition, pas une exonération.** À la sortie, les versements sont imposés au barème et les gains au PFU. On ne sait pas aujourd'hui à quelle TMI on sortira, ni quelles seront les règles fiscales dans 10, 20 ou 30 ans.
 
-À la sortie, les versements sont imposés comme revenu (barème). Les gains sont imposés au PFU.
+### Le seul vrai avantage : les intérêts composés sur l'économie d'impôt
+
+Le mécanisme réel du PER n'est pas une économie d'impôt — c'est un **prêt sans intérêt de l'État** que vous investissez pendant plusieurs années.
+
+```
+Versement 10 000 €, TMI 41%
+→ Économie IR immédiate : 4 100 € (l'État vous "prête" cette somme)
+→ Vous investissez 10 000 € au lieu de 5 900 € (si vous aviez payé l'IR)
+→ Sur 20 ans à 5%/an : 10 000 € → 26 533 € vs 5 900 € → 15 654 €
+→ Écart brut avant impôt sortie : +10 879 €
+→ À la sortie TMI 30% : impôt sur les 10 000 € = 3 000 € (vs 4 100 € payés à l'entrée)
+→ Gain net = différentiel TMI (1 100 €) + rendement sur l'économie d'impôt investie
+```
+
+Plus l'horizon est long, plus l'effet de capitalisation sur les 4 100 € "prêtés" est puissant — indépendamment du différentiel de TMI.
 
 ### Gagnant / perdant
 
 | Situation | Résultat |
 |-----------|----------|
-| TMI entrée > TMI sortie | **Gain net** — économie à l'entrée > imposition sortie |
-| TMI entrée = TMI sortie | **Neutre fiscalement** — seul l'effet capitalisation sur l'économie initiale joue |
-| TMI entrée < TMI sortie | **Perte nette** — rare mais possible (carrière ascendante, sortie capital massif) |
+| TMI entrée > TMI sortie + horizon long | **Gain double** — différentiel TMI ET capitalisation |
+| TMI entrée = TMI sortie + horizon long | **Gain modeste** — capitalisation seule sur l'économie d'impôt |
+| TMI entrée < TMI sortie | **Perte nette** — rare (carrière très ascendante, sortie en capital massif une seule année) |
+| Horizon court (< 10 ans) | **Intérêt faible** — peu de temps pour la capitalisation |
 
-### Cas typiques favorables
+### Incertitude fiscale : le risque réel du PER
 
-- **Actif TMI 30-41% avec retraite estimée TMI 11-30%** : gain net substantiel
-- **Année de revenus exceptionnels** : versement pour écraser l'IR de l'année, sortie étalée plus tard
-- **Quotient pour revenus exceptionnels + PER** : combinaison puissante pour un vesting RSU important
+En versant aujourd'hui dans un PER, on accepte de **ne pas connaître les conditions de sortie** :
+- Le barème IR dans 20 ans est inconnu
+- Le TMI à la retraite dépend de la pension, des revenus du patrimoine, de la composition du foyer
+- Les règles fiscales sur les PER peuvent évoluer (c'est arrivé avec les PERP, les Madelin)
 
-### Cas défavorables ou neutres
+**Contraste avec le PEE** : l'abondement est acquis immédiatement, exonéré d'IR de façon certaine, et la sortie après 5 ans est exonérée d'IR selon des règles stables. Pas de pari sur le futur.
 
-- **TMI 11% stable** : intérêt marginal — seul l'effet capitalisation compte
-- **TMI 45% stable (hauts revenus à la retraite)** : pas d'avantage, imposition identique entrée/sortie
-- **Horizon court (< 10 ans avant retraite)** : peu d'effet de capitalisation
+### Cas favorables
+
+- **TMI 41-45% aujourd'hui → TMI estimée 30% à la retraite** : gain double (différentiel + capitalisation) — cas le plus favorable
+- **Horizon > 15 ans** : la capitalisation sur l'économie d'impôt devient significative même sans différentiel TMI
+- **Année de revenus exceptionnels** : versement ponctuel pour écraser une tranche marginale élevée, sortie étalée
+- **Quotient revenus exceptionnels + PER** : combinaison puissante pour un vesting RSU important
+
+### Cas peu intéressants
+
+- **TMI 11% stable** : économie d'impôt faible (1 100 € pour 10 000 € versés), capitalisation sur une base réduite
+- **TMI 45% stable à la retraite** : report sans gain fiscal, pari sur la capitalisation uniquement
+- **Horizon court (< 10 ans)** : capitalisation insuffisante, blocage contraignant pour peu de gain
 
 ## Sortie du PER
 
