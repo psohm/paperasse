@@ -22,16 +22,23 @@ Exemple : versement 5 000 €, TMI 30% → économie IR = 1 500 €.
 
 ### Formule
 
-**Plafond = 10% des revenus professionnels nets** de l'année N-1 (salaires après abattement 10%, BNC, BIC — pas les revenus du capital).
+**Plafond = max(plancher, 10% × revenus professionnels nets N-1)**, dans la limite du plafond absolu.
+
+```
+Plafond = max(4 710 €,  10% × revenus pro N-1)
+                  ↑                    ↑
+          garanti même          salaires après abattement 10%,
+          sans revenus          BNC, BIC — pas les revenus du capital
+```
 
 ### Bornes (revenus 2025)
 
-| Borne | Valeur | Base |
-|-------|--------|------|
-| Plancher | 4 710 € | 10% × PASS 2025 |
+| | Valeur | Base |
+|--|--------|------|
+| Plancher (minimum garanti) | 4 710 € | 10% × PASS 2025 |
 | Plafond absolu | 37 680 € | 10% × 8 × PASS 2025 |
 
-**Plancher garanti** même sans revenus professionnels → toujours au moins 4 710 € déductibles.
+Le plancher s'applique même sans aucun revenu professionnel — un foyer sans activité peut toujours déduire 4 710 €.
 
 ### Report des plafonds non utilisés
 
