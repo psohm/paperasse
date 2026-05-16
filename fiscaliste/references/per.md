@@ -35,11 +35,18 @@ Exemple : versement 5 000 €, TMI 30% → économie IR = 1 500 €.
 
 ### Report des plafonds non utilisés
 
-Les plafonds non utilisés des **3 années précédentes** sont mobilisables. Ordre : plafond de l'année en cours d'abord, puis plafonds N-3, N-2, N-1 (ordre FIFO — le plus ancien en premier).
+Les plafonds non utilisés des années précédentes sont mobilisables. Ordre d'imputation : plafond de l'année en cours d'abord, puis plafonds reportés **en commençant par le plus ancien** (N-3, N-2, N-1).
 
-**Exemple** :
-- Plafond N : 5 000 €, utilisé 3 000 € → reste 2 000 € reportables sur N+1 à N+3
-- Au-delà de N+3, le plafond non utilisé est **perdu**
+**Durée du report :**
+- Jusqu'au 31/12/2025 : report sur les **3 années suivantes**
+- À compter du 01/01/2026 : report sur les **5 années suivantes** (loi de finances 2026)
+
+**Exemple (revenus 2025, déclaration 2026) :**
+- Plafond N : 5 000 €, utilisé 3 000 € → reste 2 000 € reportables
+- Si inutilisé, ce reliquat est disponible jusqu'en 2031 (5 ans)
+- Au-delà, le plafond non utilisé est **perdu**
+
+**Ordre FIFO obligatoire :** on consomme N-3 avant N-2 avant N-1 pour que les droits les plus anciens ne périment pas.
 
 ### Mutualisation couple
 
