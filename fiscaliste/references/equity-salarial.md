@@ -266,7 +266,14 @@ Dispositif issu de la loi n° 2022-1158 du 16 août 2022, pérennisé par la loi
 - **Au-delà du plafond ou > 3 SMIC** : imposable à l'IR et soumis aux cotisations sociales comme une prime ordinaire
 - **Pas de condition d'accord** : versable par décision unilatérale de l'employeur
 
-Intérêt pour la SARL unipersonnelle avec conjoint salarié : la PPV permet de verser jusqu'à 3 000 € (ou 6 000 €) sans cotisations ni IR pour le conjoint, déductible IS pour la société.
+**Piège depuis le 1er janvier 2025 — effet Fillon :**
+Depuis 2025, la PPV est intégrée dans la rémunération brute servant à calculer la **réduction générale de cotisations patronales** (réduction Fillon). Pour un conjoint salarié proche du SMIC, chaque euro de PPV augmente mécaniquement la base de calcul → le coefficient Fillon diminue → l'employeur perd une partie de ses allègements de charges.
+
+Exemple : une PPV de 1 500 € pour un salarié au SMIC peut coûter en réalité ~2 300 € à l'employeur une fois la perte de réduction Fillon comptabilisée. **Avant de verser une PPV à un salarié proche du SMIC, simuler l'impact sur la réduction Fillon.**
+
+Dans cette configuration, **l'intéressement peut être plus avantageux que la PPV** : il n'est pas intégré dans l'assiette de la réduction Fillon de la même façon et peut s'avérer moins coûteux pour l'employeur.
+
+Intérêt pour la SARL unipersonnelle avec conjoint salarié : la PPV reste pertinente si le conjoint est bien au-dessus du SMIC (rémunération éloignée de la zone d'effet Fillon) ou si la SARL ne bénéficie pas de la réduction Fillon (salaire > 1,6 SMIC).
 
 #### Intéressement et participation
 

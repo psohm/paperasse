@@ -194,7 +194,14 @@
         "plafond_avec_accord_interessement": 6000,
         "exoneration_cotisations": "Totale (patronales + salariales) dans le plafond",
         "exoneration_ir": "Pour salariés < 3 SMIC brut/mois (≈ 5 430 €/mois 2025) — jusqu'au 31/12/2026",
-        "mise_en_place": "Décision unilatérale de l'employeur (DUE) — pas d'accord requis"
+        "mise_en_place": "Décision unilatérale de l'employeur (DUE) — pas d'accord requis",
+        "piege_reduction_fillon": {
+          "applicable_depuis": "2025-01-01",
+          "description": "Depuis 2025, la PPV est intégrée dans la rémunération brute servant au calcul de la réduction générale de cotisations patronales (réduction Fillon). Pour les salariés proches du SMIC, la PPV réduit mécaniquement le coefficient Fillon → l'employeur perd des allègements.",
+          "exemple": "PPV 1 500 € pour un salarié au SMIC : coût réel employeur ≈ 2 300 € après perte de réduction Fillon",
+          "recommandation": "Simuler l'impact Fillon avant de verser une PPV à un salarié < 1,6 SMIC. L'intéressement peut s'avérer moins coûteux dans cette zone.",
+          "zone_risque": "Salaire entre 1 et 1,6 SMIC — au-delà, la réduction Fillon est nulle et l'effet disparaît"
+        }
       },
       "interessement_participation": {
         "interessement_pee_plafond_2025": 34776,
