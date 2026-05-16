@@ -105,16 +105,26 @@ Taux marginal effectif ≈ (taux_barème × 1,4525). Un foyer à la tranche 11% 
 
 ## Personnes rattachées (enfants majeurs)
 
-Un enfant majeur célibataire peut demander son rattachement au foyer fiscal de ses parents.
+### Régime selon la situation de l'enfant
 
-**Effet QF** : +0,5 part par personne rattachée, comme un enfant à charge classique.
+Deux régimes distincts selon la situation de l'enfant rattaché :
 
-**Plafonnement** : le même plafond par demi-part s'applique (art. 197-2° CGI).
+| Situation de l'enfant rattaché | Case 2042 | Effet fiscal |
+|-------------------------------|-----------|--------------|
+| Célibataire, sans enfant à charge | **J** | +0,5 part QF (art. 197-2° CGI) |
+| Marié, pacsé, ou avec enfant à charge | **N** | Abattement **6 855 €** sur le RNI par personne rattachée (art. 196 B CGI) — pas de demi-part |
+
+**Plafonnement (case J)** : le même plafond par demi-part s'applique.
 Voir `data/bareme-ir-2025.json` → `quotient_familial.plafond_gain_par_demi_part`.
 
-**Conditions** :
-- Enfant célibataire de moins de 21 ans, ou moins de 25 ans s'il poursuit des études
+**Abattement (case N)** : 6 855 € par personne rattachée (conjoint + enfants éventuels).
+Voir `data/bareme-ir-2025.json` → `rattachement_majeur_marie.abattement_par_personne`.
 
+### Conditions
+
+- Enfant célibataire de **moins de 21 ans**, ou de **moins de 25 ans** s'il poursuit des études
+- Enfant **infirme** : rattachable **sans condition d'âge** (art. 196 CGI)
+- Rattachement **annuel et révocable** — à recalculer chaque année selon la situation du foyer
 
 **Contrepartie** : les revenus de l'enfant sont en principe intégrés dans le RNI du foyer,
 sous réserve des exonérations applicables aux apprentis et jobs étudiants
@@ -122,6 +132,54 @@ sous réserve des exonérations applicables aux apprentis et jobs étudiants
 
 **À chiffrer au cas par cas** : si les revenus de l'enfant dépassent les seuils d'exonération,
 l'impôt supplémentaire peut annuler le gain QF lié au rattachement.
+
+### Alternative : pension alimentaire (art. 156-II-2° CGI)
+
+L'enfant majeur peut **ne pas être rattaché** : le parent déduit alors une pension alimentaire
+de son revenu imposable.
+
+**Accès aux aides sous conditions de ressources** : pour certaines aides basées sur le RFR
+propre de l'enfant (tarifs réduits transports, aides à l'achat d'un véhicule, certaines aides
+locales…), le non-rattachement peut être une condition nécessaire — en cas de rattachement,
+l'enfant n'a pas de RFR propre utilisable. Pour les bourses sur critères sociaux (CROUS),
+le revenu des parents est pris en compte sauf exceptions (émancipation, rupture familiale
+déclarée…). En revanche, l'APL et l'accès aux logements sociaux ne dépendent pas du
+rattachement fiscal — le revenu des parents n'y est pas pris en compte.
+
+Plafonds de déduction (revenus 2025) — voir `data/bareme-ir-2025.json` → `pension_alimentaire` :
+
+| Situation de l'enfant | Plafond |
+|-----------------------|---------|
+| Célibataire, non domicilié chez le parent | **6 855 €** |
+| Marié/pacsé ou chargé de famille | **13 710 €** |
+| Domicilié chez le parent, sans ressources (forfait) | **4 075 €** (célibataire) / **8 150 €** (marié/pacsé) |
+
+La pension peut être versée **en espèces ou en nature** (loyer, frais d'inscription, frais médicaux
+payés directement à l'établissement) — les deux entrent dans le même plafond, sur justificatifs.
+
+**Preuve requise** : virements bancaires traçables pour les versements en espèces ; factures ou
+reçus de l'établissement pour les paiements directs. L'administration peut demander à justifier
+le besoin de l'enfant.
+
+**Impact fiscal pour l'enfant** : la pension est imposable chez l'enfant à hauteur du montant
+déduit par le parent (art. 79 CGI), y compris les paiements en nature. Si l'enfant est apprenti,
+son salaire peut être exonéré (voir `references/ir-mecanisme.md` → "Revenus partiellement
+exonérés"), mais la pension reçue s'ajoute au-dessus et est imposable en totalité —
+l'exonération ne couvre pas la pension.
+
+**Arbitrage à faire chaque année** :
+- **Rattachement (case J)** : gain parent ≤ `plafond_gain_par_demi_part` × demi-parts ajoutées
+  (voir `data/bareme-ir-2025.json` → `quotient_familial`) — c'est un maximum, le gain réel
+  dépend du revenu du parent
+- **Pension alimentaire** : gain net = (pension × TMI parent) − (pension × TMI enfant)
+- Si l'enfant n'était pas imposable, la pension peut le faire basculer dans l'imposition
+- La pension augmente le RFR de l'enfant (peut réduire l'accès aux aides ci-dessus)
+
+Pour un foyer en **TMI 30 % ou plus** et un enfant faiblement imposable, la pension reste
+souvent avantageuse. Pour un foyer en **TMI 11 %**, le rattachement gagne presque toujours.
+
+**Exclusif** : impossible de cumuler rattachement et déduction de pension alimentaire pour
+le même enfant.
 
 ## Parent isolé (case T)
 
@@ -140,4 +198,8 @@ Majoration de 0,5 part pour les contribuables vivant seuls et élevant des enfan
 - Plafonnement QF : art. 197-2 CGI
 - Décote : art. 197-4° CGI
 - Parent isolé : art. 194-II CGI
+- Rattachement enfant infirme : art. 196 CGI
+- Rattachement majeur marié/pacsé : art. 196 B CGI
+- Pension alimentaire enfant majeur : art. 156-II-2° CGI
 - BOFiP : BOI-IR-LIQ-10-20-20 et BOI-IR-LIQ-20-20-30
+- BOFiP pension alimentaire : BOI-IR-BASE-20-30-20-20
