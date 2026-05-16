@@ -71,16 +71,39 @@
       "abondement_employeur": "Exonéré IR et PS dans les plafonds — AVANTAGE MAJEUR vs versement direct",
       "plafond_abondement_pee_2025": 3709,
       "plafond_base": "8% × PASS par bénéficiaire (à vérifier annuellement)",
-      "blocage": "5 ans sauf cas de déblocage anticipé (mariage, naissance 3e enfant, achat RP, divorce avec enfant à charge, fin contrat travail, surendettement, invalidité, décès, violences conjugales)",
-      "sortie": "Après 5 ans : exonération IR, PS sur les gains uniquement",
+      "blocage_duree": "5 ans",
+      "deblocage_anticipe_reference": "Art. R. 3332-28 Code du travail — délai 6 mois par cas (sauf décès et surendettement : immédiat)",
+      "deblocage_anticipe_cas": [
+        "Mariage ou PACS du bénéficiaire",
+        "Naissance ou adoption portant la famille à 3 enfants ou plus",
+        "Divorce / séparation / dissolution PACS avec garde d'au moins 1 enfant",
+        "Invalidité (bénéficiaire, conjoint/PACS ou enfant — toute catégorie)",
+        "Décès (bénéficiaire ou conjoint/PACS)",
+        "Rupture du contrat de travail (démission, licenciement, retraite, rupture conventionnelle)",
+        "Création ou reprise d'entreprise (bénéficiaire, conjoint ou enfant)",
+        "Acquisition ou agrandissement de la résidence principale",
+        "Surendettement (sur demande commission de surendettement)",
+        "Violences conjugales (loi n° 2021-1774 du 24 décembre 2021)"
+      ],
+      "sortie": "Après 5 ans : exonération IR, PS 17,2% sur les gains uniquement",
       "dividendes_reinvestis": "Exonérés IR tant qu'ils restent dans l'enveloppe"
     },
     "perco_pero": {
-      "description": "Équivalent PER collectif",
-      "sortie_retraite": "Rente ou capital, même fiscalité que PER individuel",
+      "description": "Équivalent PER collectif — PERCO remplacé par PERO depuis loi Pacte",
+      "sortie_retraite": "Rente ou capital, même fiscalité que PER individuel (versements au barème, gains au PFU)",
       "abondement_employeur": "Exonéré IR et PS dans les plafonds (plafond distinct du PEE)",
       "plafond_abondement_perco_2025": 7418,
-      "plafond_base": "16% × PASS par bénéficiaire"
+      "plafond_base": "16% × PASS par bénéficiaire",
+      "deblocage_anticipe_reference": "Art. L. 3334-14 Code du travail (PERCO) ; art. L. 224-4 CMF (PERO)",
+      "deblocage_anticipe_cas": [
+        "Décès (bénéficiaire ou conjoint/PACS)",
+        "Invalidité 2e ou 3e catégorie SS (bénéficiaire, conjoint ou enfants)",
+        "Surendettement",
+        "Expiration des droits à l'assurance chômage",
+        "Cessation d'activité non salariée suite à liquidation judiciaire",
+        "Acquisition résidence principale (PERO uniquement — compartiment versements volontaires)"
+      ],
+      "note_pero_vs_pee": "Cas de déblocage beaucoup plus restreints que le PEE. Mariage, naissance, divorce, rupture contrat travail, création entreprise : NON déblocables sur PERCO/PERO."
     },
     "arbitrage_vs_per_individuel": "PEE / PERCO = abondement employeur (levier immédiat +30% à +300%). PER individuel = déduction du RNI. À combiner : abonder d'abord PEE/PERCO pour capter l'abondement, puis PER individuel."
   },

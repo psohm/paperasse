@@ -104,15 +104,53 @@ Enveloppe collective distincte du PER individuel.
 
 - **Abondement employeur** : exonéré IR et PS dans les plafonds — **AVANTAGE MAJEUR**
 - **Plafond abondement** : ~3 709 € par bénéficiaire (8% PASS — vérifier annuellement)
-- **Blocage** : 5 ans sauf cas de déblocage anticipé (mariage, naissance 3e enfant, achat RP, divorce avec enfant, fin contrat travail, surendettement, invalidité, décès, violences conjugales)
+- **Blocage** : 5 ans, sauf cas de déblocage anticipé (art. R. 3332-28 Code du travail)
 - **Sortie après 5 ans** : exonération IR, seuls PS 17,2% sur les gains
 - **Dividendes réinvestis** : exonérés IR tant qu'ils restent dans l'enveloppe
+
+#### Cas de déblocage anticipé PEE
+
+Chaque cas ouvre un délai de 6 mois pour effectuer le retrait (sauf décès et surendettement : retrait immédiat possible).
+
+| Cas | Précisions |
+|-----|-----------|
+| Mariage ou PACS du bénéficiaire | — |
+| Naissance ou adoption (3e enfant et suivants) | Famille portée à 3 enfants minimum |
+| Divorce / séparation / dissolution PACS | Avec garde d'au moins 1 enfant |
+| Invalidité | Bénéficiaire, conjoint/PACS, ou enfant (toute catégorie) |
+| Décès | Bénéficiaire ou conjoint/PACS |
+| Rupture du contrat de travail | Démission, licenciement, retraite, rupture conventionnelle |
+| Création ou reprise d'entreprise | Bénéficiaire, conjoint ou enfant |
+| Acquisition ou agrandissement de la résidence principale | Y compris construction, remise en état après catastrophe naturelle |
+| Surendettement | Sur demande de la commission de surendettement |
+| Violences conjugales | Loi n° 2021-1774 du 24 décembre 2021 |
 
 ### PERCO / PERO (PER d'entreprise)
 
 - **Sortie à la retraite** : rente ou capital
 - **Fiscalité sortie** : même que PER individuel (versements à barème, gains au PFU)
 - **Abondement employeur** : exonéré dans plafonds (~7 418 €, distinct du plafond PEE)
+
+#### Cas de déblocage anticipé PERCO / PERO
+
+Le PERCO/PERO est une enveloppe retraite — les cas de sortie anticipée sont **beaucoup plus restreints** que le PEE (art. L. 3334-14 Code du travail et art. L. 224-4 CMF pour le PERO).
+
+| Cas | PEE | PERCO / PERO |
+|-----|-----|-------------|
+| Décès (bénéficiaire ou conjoint) | Oui | Oui |
+| Invalidité (bénéficiaire, conjoint ou enfant) | Oui | Oui (2e ou 3e catégorie SS) |
+| Surendettement | Oui | Oui |
+| Expiration des droits à l'assurance chômage | Non | Oui |
+| Cessation d'activité non salariée (liquidation judiciaire) | Non | Oui |
+| Acquisition de la résidence principale | Oui | **PERO uniquement** (compartiment versements volontaires) |
+| Mariage / PACS | Oui | **Non** |
+| Naissance 3e enfant | Oui | **Non** |
+| Divorce / séparation | Oui | **Non** |
+| Rupture du contrat de travail | Oui | **Non** |
+| Création / reprise d'entreprise | Oui | **Non** |
+| Violences conjugales | Oui | **Non** |
+
+**Point d'attention PERO vs PERCO** : depuis la loi Pacte, le PERO (PER d'entreprise collectif) remplace progressivement le PERCO. L'acquisition de la résidence principale est un cas de déblocage uniquement pour le compartiment "versements volontaires" du PERO — pas pour les compartiments intéressement/participation/abondement.
 
 ### Arbitrage PEE/PERCO vs PER individuel
 
