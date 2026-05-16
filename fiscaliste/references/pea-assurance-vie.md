@@ -121,11 +121,13 @@ Taux dégressif selon ancienneté du contrat. Prélèvement libératoire (PFL) o
 
 **Seuil 150 000 €** : s'apprécie sur l'ensemble des contrats AV du foyer, au moment du rachat.
 
-### Option barème
+### Option barème (case 2OP)
+
+**L'abattement annuel de 4 600 € / 9 200 € s'applique dans les deux cas** (PFU et barème) — il est lié à l'ancienneté du contrat, pas au régime fiscal choisi.
 
 **Avantageuse si TMI ≤ 11%** — le barème peut être meilleur que le PFU après 8 ans (car abattement annuel + taux IR faible).
 
-Option **globale** et irrévocable pour l'année.
+Option **globale** pour l'année : s'applique à tous les revenus de capitaux mobiliers du foyer.
 
 ### Contrats très anciens (avant 1983)
 
