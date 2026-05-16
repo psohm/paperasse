@@ -87,7 +87,7 @@
       "sortie": "Après 5 ans : exonération IR, PS 17,2% sur les gains uniquement",
       "dividendes_reinvestis": "Exonérés IR tant qu'ils restent dans l'enveloppe"
     },
-    "perco_pero": {
+    "perco_pereco": {
       "description": "Équivalent PER collectif — PERCO remplacé par PERO depuis loi Pacte",
       "sortie_retraite": "Rente ou capital, même fiscalité que PER individuel (versements au barème, gains au PFU)",
       "abondement_employeur": "Exonéré IR et PS dans les plafonds (plafond distinct du PEE)",
@@ -101,7 +101,7 @@
         "Cessation d'activité non salariée suite à liquidation judiciaire",
         "Acquisition résidence principale (PERO uniquement — compartiment versements volontaires)"
       ],
-      "note_pero_vs_pee": "Cas de déblocage beaucoup plus restreints que le PEE. Mariage, naissance, divorce, rupture contrat travail, création entreprise : NON déblocables sur PERCO/PERO."
+      "note_pero_vs_pee": "Cas de déblocage beaucoup plus restreints que le PEE. Mariage, naissance, divorce, rupture contrat travail, création entreprise : NON déblocables sur PERCO/PERECO."
     },
     "arbitrage_vs_per_individuel": "PEE / PERCO = abondement employeur (levier immédiat +30% à +300%). PER individuel = déduction du RNI. À combiner : abonder d'abord PEE/PERCO pour capter l'abondement, puis PER individuel."
   },

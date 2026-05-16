@@ -96,7 +96,7 @@ Demander à la société :
 - Régime fiscal (IS obligatoire)
 - Historique des restructurations éventuelles
 
-## Épargne salariale (PEE / PERCO / PERO)
+## Épargne salariale (PEE / PERCO / PERECO)
 
 ### PEE (Plan d'Épargne Entreprise)
 
@@ -125,31 +125,106 @@ Chaque cas ouvre un délai de 6 mois pour effectuer le retrait (sauf décès et 
 | Surendettement | Sur demande de la commission de surendettement |
 | Violences conjugales | Loi n° 2021-1774 du 24 décembre 2021 |
 
-### PERCO / PERO (PER d'entreprise)
+### PERCO / PERECO / PERO : clarification terminologique
 
-- **Sortie à la retraite** : rente ou capital
-- **Fiscalité sortie** : même que PER individuel (versements à barème, gains au PFU)
-- **Abondement employeur** : exonéré dans plafonds (16% × PASS, distinct du plafond PEE — voir `data/per-plafonds.json` → `epargne_salariale_abondement.pereco`)
+Trois générations de plans, souvent confondus :
 
-#### Cas de déblocage anticipé PERCO / PERO
+| Sigle | Nom complet | Statut | Remplace |
+|-------|------------|--------|---------|
+| **PERCO** | Plan d'Épargne pour la Retraite Collectif | Fermé (plus créable depuis oct. 2020) | — |
+| **PERECO** (ou PERCOL) | PER d'Entreprise Collectif | Actif — successeur du PERCO | PERCO |
+| **PERO** | PER d'Entreprise Obligatoire | Actif — différent du PERECO | Article 83 |
 
-Le PERCO/PERO est une enveloppe retraite — les cas de sortie anticipée sont beaucoup plus restreints que le PEE (art. L. 3334-14 Code du travail et art. L. 224-4 CMF pour le PERO) :
+**PERECO et PERO sont deux produits distincts** et peuvent coexister dans la même entreprise : le PERECO est volontaire (alimenté par intéressement, participation, abondement, versements volontaires) ; le PERO est obligatoire pour une catégorie de salariés définie, avec des cotisations patronales imposées. Dans les petites structures (SARL, EURL), le PERO est rare — c'est le PERECO qui est pertinent.
+
+### Sortie PERCO / PERECO : rente ou capital
+
+La fiscalité de sortie dépend de **l'origine des fonds**, pas du plan lui-même.
+
+#### Fonds issus de l'épargne salariale (intéressement, participation, abondement — compartiment 2)
+
+Ces sommes ont été **exonérées d'IR à l'entrée** (pas déduites). La sortie est donc avantageuse :
+
+| Mode de sortie | IR | Prélèvements sociaux |
+|---------------|----|--------------------|
+| **Capital** | **Exonéré** (sommes déjà exonérées à l'entrée) | 17,2% sur les gains uniquement |
+| **Rente** | Régime des rentes viagères à titre onéreux — fraction taxable selon l'âge | PS sur la fraction taxable |
+
+**Fractions taxables de la rente (rente viagère à titre onéreux)** selon l'âge au premier versement :
+
+| Âge au premier versement de rente | Fraction imposable à l'IR |
+|----------------------------------|--------------------------|
+| Moins de 50 ans | 70% |
+| 50 à 59 ans | 50% |
+| 60 à 69 ans | 40% |
+| 70 ans et plus | 30% |
+
+La rente viagère à titre onéreux est plus favorable que la rente pension (PER individuel avec déduction) car seule une fraction est imposée — sans abattement 10% mais sur une base réduite.
+
+#### Fonds issus de versements volontaires déduits (compartiment 1, PERECO uniquement)
+
+| Mode de sortie | IR | Prélèvements sociaux |
+|---------------|----|--------------------|
+| **Capital** | Versements au barème IR (comme revenu ordinaire) | PFU 17,2% sur les gains |
+| **Rente** | Régime des pensions (barème + abattement 10%) | PS 9,1% |
+
+#### Rente ou capital : quand choisir quoi ?
+
+| Critère | Capital | Rente |
+|---------|---------|-------|
+| Encours modeste (< 30 k€) | Préférable | Rente dérisoire |
+| Encours important + longévité | — | Protège contre le risque de longévité |
+| TMI retraite élevé | Étaler la sortie en capital sur plusieurs années | Rente imposée chaque année |
+| Besoin de liquidité | Oui | Non |
+
+**Conseil pratique** : la sortie en capital peut être fractionnée sur plusieurs années (à demander à l'assureur) pour lisser l'imposition.
+
+### PERCO ancien : qu'est-il devenu ?
+
+Depuis le **1er octobre 2020**, aucun nouveau PERCO ne peut être créé. Les plans existants ont trois destins :
+
+1. **Ils continuent de fonctionner** avec leurs règles d'origine — certains ne permettaient que la sortie en rente
+2. **L'entreprise les transfère vers un PERECO** — transfert à l'initiative de l'employeur, neutre fiscalement
+3. **Ils s'éteignent** naturellement quand tous les bénéficiaires ont liquidé leurs droits
+
+### Migration PERCO → PERECO : faut-il le faire ?
+
+**Avantages :**
+- Accès à la **sortie en capital** si le PERCO ancien ne la permettait pas (rente uniquement)
+- Meilleure **portabilité** lors d'un changement d'employeur
+- Gestion d'actifs souvent plus moderne (gamme de fonds élargie)
+
+**Contraintes :**
+- Décision de **l'entreprise**, pas du salarié seul
+- Frais plafonnés à **1% de l'encours** si transfert avant 5 ans de détention ; **gratuit** au-delà
+- Délai administratif : **2 à 3 mois**
+- Les avoirs PERCO migrent dans le **compartiment 2** du PERECO (épargne salariale)
+
+**Ce que la migration ne permet PAS :**
+
+Le déblocage anticipé pour **achat de la résidence principale** n'est possible que sur le **compartiment 1** (versements volontaires) du PERECO. Les avoirs issus d'un ancien PERCO migrent en compartiment 2 — ils ne donnent pas droit à ce déblocage.
+
+**Migrer son PERCO juste avant un achat RP ne sert donc à rien** : les fonds restent bloqués jusqu'à la retraite (ou autre cas de déblocage restreint). Pour profiter du déblocage RP, il faut avoir alimenté volontairement le compartiment 1 du PERECO séparément, en amont.
+
+#### Cas de déblocage anticipé PERCO / PERECO
+
+Les cas de sortie anticipée sont beaucoup plus restreints que le PEE (art. L. 3334-14 C. trav., art. L. 224-4 CMF) :
 
 - Décès (bénéficiaire ou conjoint/PACS)
 - Invalidité 2e ou 3e catégorie SS (bénéficiaire, conjoint ou enfants)
 - Surendettement
 - Expiration des droits à l'assurance chômage
 - Cessation d'activité non salariée suite à liquidation judiciaire
-- Acquisition de la résidence principale (**PERO uniquement** — compartiment versements volontaires, pas intéressement/participation/abondement)
+- Acquisition de la résidence principale (**compartiment 1 PERECO uniquement** — pas sur les avoirs issus de PERCO migré)
 
-Mariage, naissance, divorce, rupture de contrat, création d'entreprise, violences conjugales : **non déblocables** sur PERCO/PERO.
+Mariage, naissance, divorce, rupture de contrat, création d'entreprise, violences conjugales : **non déblocables** sur PERCO/PERECO.
 
 ### Arbitrage PEE/PERCO vs PER individuel
 
 | Enveloppe | Avantage unique | Quand privilégier |
 |-----------|----------------|-------------------|
 | PEE | Abondement employeur (levier +30% à +300%) | D'abord, toujours — tant qu'il y a abondement |
-| PERCO / PERO | Abondement employeur sur épargne retraite | En second après PEE max |
+| PERECO | Abondement employeur sur épargne retraite | En second après PEE max |
 | PER individuel | Déduction RNI (pas de plafond d'abondement) | En complément, après saturation PEE/PERCO |
 
 **Règle d'or** : ne jamais abonder un PER individuel avant d'avoir saturé l'abondement employeur PEE + PERCO. L'abondement est de l'argent gratuit.
