@@ -67,28 +67,32 @@ Voir `data/niches-fiscales.json` → `dispositifs_hors_plafond`.
 | **Girardin industriel outre-mer** | Variable, sous conditions |
 | **Investissement outre-mer** (catégories spécifiques) | Variable |
 
-### Frais de scolarité des enfants (cases 7EF, 7EG, 7EH)
+### Frais de scolarité des enfants (cases 7EA/7EC/7EF)
 
 Voir `data/niches-fiscales.json` → `frais_scolarite`.
 
 Réduction forfaitaire par enfant à charge (ou rattaché) **scolarisé au 31 décembre** de l'année d'imposition.
 
-| Niveau | Case | Réduction |
-|--------|------|-----------|
-| Collège | 7EG | 61 € |
-| Lycée | 7EH | 153 € |
-| Enseignement supérieur | 7EF | 183 € |
+| Niveau | Enfant à charge | Garde alternée | Réduction |
+|--------|----------------|----------------|-----------|
+| Collège | 7EA | 7EB | 61 € |
+| Lycée | 7EC | 7ED | 153 € |
+| Enseignement supérieur | 7EF | 7EG | 183 € |
 
-Montants stables (non indexés annuellement).
+Montants stables (non indexés annuellement). Réduction non remboursable — excédent perdu si impôt < réduction.
 
-**Nature** : réduction d'impôt — non remboursable. Si l'impôt brut est inférieur à la réduction, l'excédent est perdu (contrairement à un crédit d'impôt).
+**Garde alternée** : réduction divisée par deux entre les deux foyers (cases 7EB / 7ED / 7EG).
 
-**Conditions** : établissement public ou privé (France ou étranger), ou formation initiale Cned. L'enfant ne doit pas être lié par un contrat de travail ni rémunéré.
+**Exclusions** : apprentissage, congé formation, contrat d'études avec l'employeur. La condition BOFiP ("contrat de travail avec l'employeur") vise les formations dont la structure implique un lien contractuel avec un employeur — pas un job étudiant exercé en parallèle d'une formation initiale.
 
-**Garde alternée** : la réduction est partagée par moitié entre les deux foyers fiscaux.
+**Cas limites à ne pas confondre** :
+- Job étudiant à côté des études → **éligible** (contrat sans lien avec la formation)
+- Stage indemnisé obligatoire intégré au cursus → **éligible** (prévu explicitement par BOFiP BOI-IR-RICI-30)
+- Apprentissage / alternance → **exclu**
+- Études terminées en cours d'année, enfant non inscrit nulle part au 31/12 → **pas de réduction**
+- Pension alimentaire déduite (6GI/6GJ) pour cet enfant → **pas de réduction** (l'enfant n'est plus compté à charge)
 
-**Exclusions explicites** : apprentissage, congé formation, contrat d'études avec l'employeur. Un alternant rattaché au foyer ne peut donc **pas** en bénéficier.
-Source : [service-public.fr — Frais de scolarité (vérifié avril 2026)](https://www.service-public.gouv.fr/particuliers/vosdroits/F9/)
+Source : BOFiP BOI-IR-RICI-30 · art. 199 quater F CGI
 
 ### Dons aux associations
 
