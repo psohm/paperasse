@@ -220,13 +220,9 @@ Plafond = **10% du bénéfice imposable** (dans la limite de 8 PASS) **+ 15% de 
 
 Contrairement au plafond 163 quatervicies (PASS N-1, revenus N-1), le plafond 154 bis se calcule sur le **bénéfice et le PASS de l'année de versement**. Il est donc potentiellement **supérieur** pour les bénéfices élevés. Le plafond 154 bis ne figure pas sur l'avis d'imposition : il se calcule à partir du bénéfice de l'année.
 
-### Double avantage TNS
+### Effet sur l'IR seulement
 
-Les cotisations versées sur un PER TNS sont :
-1. Déductibles du revenu professionnel (réduction IR)
-2. Déductibles de l'assiette des cotisations sociales TNS (réduction cotisations URSSAF)
-
-Ce double avantage est plus puissant que le PER individuel (qui ne joue que sur l'IR). Le taux effectif d'économie peut atteindre TMI + taux marginal de cotisations TNS.
+Les cotisations versées au titre de l'art. 154 bis sont déductibles du revenu professionnel **pour l'IR**. Elles sont en revanche **réintégrées dans l'assiette des cotisations sociales TNS** (art. L. 131-6 CSS) : elles ne réduisent pas les cotisations URSSAF. L'économie se limite donc à la TMI, comme pour le PER individuel ; l'intérêt du 154 bis tient à son plafond plus élevé.
 
 ### Arbitrage PER TNS vs PEE/PERECO pour le dirigeant TNS
 
@@ -234,7 +230,7 @@ Le PEE/PERECO n'est ouvert au dirigeant que si l'entreprise emploie **au moins u
 
 **Ordre d'examen si l'entreprise a au moins un salarié :**
 1. Abondement PEE + PERECO (11 304 € maximum en 2025), en tenant compte du même abondement dû aux salariés
-2. PER TNS (art. 154 bis) pour les montants supplémentaires — plafond plus élevé, déduction IR + cotisations
+2. PER TNS (art. 154 bis) pour les montants supplémentaires — plafond plus élevé, déduction à l'IR seulement
 3. PER individuel (art. 163 quatervicies) en complément
 
 **Atouts du PEE/PERECO dans ce cas :**

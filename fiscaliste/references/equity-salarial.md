@@ -107,26 +107,31 @@ Enveloppe collective distincte du PER individuel.
 
 - **Abondement employeur** : exonéré d'IR et de cotisations sociales dans les plafonds, mais soumis à la CSG/CRDS (9,7 %) à l'entrée ; forfait social 0 % sous 50 salariés, 20 % au-delà (taux réduits possibles sur le PERECO)
 - **Plafond abondement** : 8% × PASS de l'année de versement — voir `data/per-plafonds.json` → `epargne_salariale_abondement.pee`
-- **Blocage** : 5 ans, sauf cas de déblocage anticipé (art. R. 3332-28 Code du travail)
+- **Blocage** : 5 ans, sauf cas de déblocage anticipé (art. R. 3332-28 Code du travail, qui renvoie aux cas de l'art. R. 3324-22)
 - **Sortie après 5 ans** : exonération IR, seuls les PS sur les gains (taux en vigueur au moment de la sortie — cf. SKILL.md § PFU et prélèvements sociaux ; 17,2% jusqu'au 31/12/2025, 18,6% à compter du 01/01/2026 suite à la LFSS 2026)
 - **Dividendes réinvestis** : exonérés IR tant qu'ils restent dans l'enveloppe
 
 #### Cas de déblocage anticipé PEE
 
-Chaque cas ouvre un délai de 6 mois pour effectuer le retrait (sauf décès et surendettement : retrait immédiat possible).
+Cas limitativement énumérés à l'art. R. 3324-22 C. trav. La demande doit être présentée dans les **6 mois** suivant le fait générateur, sauf pour la rupture du contrat de travail, le décès, l'invalidité, les violences conjugales, le surendettement et l'activité de proche aidant : demande possible **à tout moment** (art. R. 3324-23).
 
 | Cas | Précisions |
 |-----|-----------|
 | Mariage ou PACS du bénéficiaire | — |
-| Naissance ou adoption (3e enfant et suivants) | Famille portée à 3 enfants minimum |
-| Divorce / séparation / dissolution PACS | Avec garde d'au moins 1 enfant |
-| Invalidité | Bénéficiaire, conjoint/PACS, ou enfant (toute catégorie) |
-| Décès | Bénéficiaire ou conjoint/PACS |
-| Rupture du contrat de travail | Démission, licenciement, retraite, rupture conventionnelle |
-| Création ou reprise d'entreprise | Bénéficiaire, conjoint ou enfant |
-| Acquisition ou agrandissement de la résidence principale | Y compris construction, remise en état après catastrophe naturelle |
-| Surendettement | Sur demande de la commission de surendettement |
-| Violences conjugales | Loi n° 2021-1774 du 24 décembre 2021 |
+| Naissance ou arrivée d'un enfant adopté | Le foyer compte déjà au moins 2 enfants à charge |
+| Divorce, séparation, dissolution du PACS | Résidence habituelle d'au moins un enfant au domicile du bénéficiaire |
+| Violences conjugales | Ordonnance de protection, ou faits ayant donné lieu à une poursuite pénale ou à une condamnation |
+| Invalidité | Bénéficiaire, enfant, conjoint ou partenaire de PACS ; taux d'incapacité d'au moins 80 % et absence d'activité professionnelle |
+| Décès | Bénéficiaire, conjoint ou partenaire de PACS |
+| Fin du contrat de travail ou de l'activité | Rupture du contrat de travail, cessation d'activité de l'entrepreneur individuel, fin du mandat social, perte du statut de conjoint collaborateur ou associé |
+| Création ou reprise d'entreprise | Bénéficiaire, enfant, conjoint ou partenaire de PACS |
+| Résidence principale | Acquisition, agrandissement créant de la surface habitable nouvelle, remise en état après catastrophe naturelle |
+| Rénovation énergétique de la résidence principale | Au sens du code de la construction |
+| Surendettement | Sur demande de la commission de surendettement ou du juge |
+| Activité de proche aidant | Pour un proche au sens du code du travail |
+| Achat d'un véhicule propre | Voiture ou utilitaire léger électrique, hydrogène ou hybride rechargeable, deux-roues ou trois-roues électrique, vélo à assistance électrique neuf |
+
+La rénovation énergétique, l'activité de proche aidant et l'achat d'un véhicule propre ont été ajoutés par le décret du 5 juillet 2024 (applicables aux faits générateurs, ou aux demandes pour le proche aidant, postérieurs à son entrée en vigueur).
 
 ### PERCO / PERECO / PERO : clarification terminologique
 
@@ -287,7 +292,7 @@ L'abondement est une charge déductible du résultat (compte 6474 — charges de
 
 **Exonération cotisations sociales dans les plafonds :**
 - Côté société : pas de cotisations patronales sur l'abondement ; forfait social 0 % sous 50 salariés
-- Côté dirigeant TNS : l'abondement n'est pas intégré dans l'assiette des cotisations sociales TNS, mais la CSG/CRDS (9,7 %) est prélevée
+- Côté dirigeant TNS : l'abondement est exonéré d'IR et donc absent du revenu professionnel qui sert d'assiette aux cotisations TNS ; la CSG/CRDS (9,7 %) est prélevée. L'art. L. 3332-27 C. trav. ne vise expressément que l'assiette des salariés (L. 242-1 CSS) : faire confirmer le traitement par l'URSSAF ou l'expert-comptable, notamment depuis la réforme de l'assiette sociale des indépendants de 2026
 - Côté IR : abondement exclu du revenu imposable (art. 81-18° CGI)
 
 **Exemple chiffré — gérant SARL IS avec un salarié, IS 25 %, cotisations TNS ≈ 42 % (hypothèses à adapter) :**
@@ -305,8 +310,8 @@ Deux enveloppes concurrentes pour l'optimisation fiscale du dirigeant TNS :
 
 | Critère | PEE / PERECO (abondement) | PER TNS (ex-Madelin, art. 154 bis CGI) |
 |---------|--------------------------|----------------------------------------|
-| Déduction du résultat société | Oui (charge IS) | Oui (cotisations déductibles) |
-| Économie cotisations TNS | Oui, dans plafonds | Oui (assiette cotisations réduite) |
+| Déduction du résultat société | Oui (charge IS) | Indirecte : déduites du revenu imposable du gérant (art. 62 CGI pour une SARL à l'IS) |
+| Économie cotisations TNS | Oui, dans plafonds | Non : les cotisations PER 154 bis sont réintégrées dans l'assiette des cotisations sociales (art. L. 131-6 CSS) |
 | Exonération IR entrée | Oui (abondement exclu du revenu) | Oui (déduction revenu professionnel) |
 | Plafond annuel | 24% × PASS (PEE + PERECO — voir per-plafonds.json) | 10% bénéfice + 15% fraction > PASS (plafond souvent plus élevé pour fort bénéfice) |
 | Liquidité | PEE : déblocage après 5 ans (cas anticipés nombreux) | Bloqué jusqu'à la retraite |

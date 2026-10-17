@@ -71,18 +71,21 @@
       "abondement_employeur": "Exonéré d'IR et de cotisations sociales dans les plafonds ; CSG/CRDS 9,7 % dues à l'entrée ; forfait social 0 % sous 50 salariés, 20 % au-delà",
       "plafond_base": "8% × PASS de l'année de versement — voir per-plafonds.json → epargne_salariale_abondement.pee",
       "blocage_duree": "5 ans",
-      "deblocage_anticipe_reference": "Art. R. 3332-28 Code du travail — délai 6 mois par cas (sauf décès et surendettement : immédiat)",
+      "deblocage_anticipe_reference": "Art. R. 3332-28 C. trav. (renvoi à R. 3324-22) ; délai de demande 6 mois, sauf rupture du contrat, décès, invalidité, violences conjugales, surendettement et proche aidant : à tout moment (R. 3324-23)",
       "deblocage_anticipe_cas": [
         "Mariage ou PACS du bénéficiaire",
-        "Naissance ou adoption portant la famille à 3 enfants ou plus",
-        "Divorce / séparation / dissolution PACS avec garde d'au moins 1 enfant",
-        "Invalidité (bénéficiaire, conjoint/PACS ou enfant — toute catégorie)",
-        "Décès (bénéficiaire ou conjoint/PACS)",
-        "Rupture du contrat de travail (démission, licenciement, retraite, rupture conventionnelle)",
-        "Création ou reprise d'entreprise (bénéficiaire, conjoint ou enfant)",
-        "Acquisition ou agrandissement de la résidence principale",
-        "Surendettement (sur demande commission de surendettement)",
-        "Violences conjugales (loi n° 2021-1774 du 24 décembre 2021)"
+        "Naissance ou adoption d'un enfant, le foyer comptant déjà au moins 2 enfants à charge",
+        "Divorce / séparation / dissolution PACS avec résidence habituelle d'au moins un enfant chez le bénéficiaire",
+        "Violences conjugales (ordonnance de protection ou poursuite pénale)",
+        "Invalidité du bénéficiaire, d'un enfant, du conjoint/PACS (incapacité ≥ 80 %, sans activité professionnelle)",
+        "Décès du bénéficiaire ou du conjoint/PACS",
+        "Rupture du contrat de travail, cessation d'activité de l'entrepreneur individuel, fin du mandat social, perte du statut de conjoint collaborateur ou associé",
+        "Création ou reprise d'entreprise (bénéficiaire, enfant, conjoint/PACS)",
+        "Acquisition, agrandissement ou remise en état après catastrophe naturelle de la résidence principale",
+        "Rénovation énergétique de la résidence principale",
+        "Surendettement (commission de surendettement ou juge)",
+        "Activité de proche aidant",
+        "Achat d'un véhicule propre neuf (électrique, hydrogène, hybride rechargeable, vélo à assistance électrique)"
       ],
       "sortie": "Après 5 ans : exonération IR, PS sur les gains uniquement (taux en vigueur — cf. SKILL.md, 18,6% depuis LFSS 2026)",
       "dividendes_reinvestis": "Exonérés IR tant qu'ils restent dans l'enveloppe"
@@ -178,7 +181,7 @@
     },
     "fiscalite_abondement": {
       "deductibilite_is": "Charge déductible du résultat de la société (IS 25% ou 15% PME sur les 42 500 premiers €)",
-      "exoneration_cotisations_tns": "Abondement exclu de l'assiette des cotisations sociales TNS dans les plafonds",
+      "exoneration_cotisations_tns": "Abondement exonéré d'IR, donc absent du revenu professionnel servant d'assiette TNS ; L. 3332-27 C. trav. ne vise expressément que l'assiette salariale (L. 242-1 CSS) — à faire confirmer par l'URSSAF",
       "csg_crds": "9,7 % dues sur l'abondement",
       "forfait_social": "0 % sous 50 salariés",
       "cout_salaries": "Le même abondement est dû à chaque salarié qui effectue le même versement",
@@ -194,7 +197,7 @@
       ],
       "per_tns_avantages": [
         "Plafond potentiellement plus élevé pour les forts bénéfices",
-        "Déduction cotisations du revenu professionnel (réduction assiette cotisations TNS)",
+        "Déduction du revenu professionnel pour l'IR (les cotisations restent dans l'assiette des cotisations sociales TNS — art. L. 131-6 CSS)",
         "Adapté à l'horizon retraite long"
       ],
       "ordre_examen_avec_salarie": "1. PEE + PERECO (11 304 € d'abondement maximum en 2025), en intégrant le coût de l'abondement versé aux salariés / 2. PER TNS (art. 154 bis) pour le surplus / 3. PER individuel 163 quatervicies en complément",
