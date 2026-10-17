@@ -34,13 +34,13 @@
   "epargne_salariale_abondement": {
     "description": "Plafonds d'abondement employeur PEE et PERECO — calculés sur le PASS de l'année de versement",
     "pee": {
-      "formule": "8% × PASS_annee_versement",
+      "formule": "8% × PASS de l'année de versement",
       "plafond_2024": 3709,
       "plafond_2025": 3768,
       "plafond_2026": 3845
     },
     "pereco": {
-      "formule": "16% × PASS_annee_versement",
+      "formule": "16% × PASS de l'année de versement",
       "plafond_2024": 7418,
       "plafond_2025": 7536,
       "plafond_2026": 7690

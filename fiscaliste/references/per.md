@@ -183,9 +183,9 @@ Ces options réduisent le montant de la rente. À négocier à la souscription s
 
 **PER compte-titres (PER bancaire, rare) :** les sommes sont intégrées à l'actif successoral et relèvent des droits de succession ; le régime de l'assurance-vie (art. 990 I / 757 B) ne s'applique qu'au PER assurance (service-public F34982). Vérifier la forme du contrat.
 
-## Priorité absolue : abondement employeur avant PER individuel
+## Abondement employeur et PER individuel
 
-**Avant tout versement PER individuel, vérifier que l'abondement PEE / PERECO de l'employeur est saturé.**
+**Avant un versement sur un PER individuel, vérifier si l'employeur propose un abondement PEE / PERECO non utilisé.**
 
 L'abondement est un complément versé par l'entreprise pour chaque euro versé par le salarié sur son PEE ou son PERECO — typiquement 50 à 300 % du versement salarié, dans une limite annuelle (8 % du PASS pour le PEE, 16 % du PASS pour le PERECO).
 
@@ -195,7 +195,7 @@ L'abondement est un complément versé par l'entreprise pour chaque euro versé 
 | **PERECO + abondement** | Idem + blocage jusqu'à la retraite |
 | **PER individuel** | Uniquement économie d'impôt immédiate × TMI, pas de match employeur |
 
-**Règle** : un abondement employeur de 100 % représente un rendement immédiat de 100 %. Aucune défiscalisation PER n'égale ce rendement. Toujours saturer PEE/PERECO en premier si l'option existe.
+Un abondement de 100 % double le versement dès l'entrée, ce qu'aucune déduction PER ne procure. Il reste à comparer la durée de blocage, les frais et les supports disponibles.
 
 ## Mécanique pratique
 
@@ -243,7 +243,7 @@ Le PEE/PERECO n'est ouvert au dirigeant que si l'entreprise emploie **au moins u
 - **PER individuel** (présent doc) : versements volontaires, déductibles dans la limite du plafond, sortie imposée au barème.
 - **PERECO / PEE** (plans d'épargne entreprise) : alimenté par intéressement, participation, abondement employeur. Voir la section Equity salarial listée depuis SKILL.md pour le détail.
 
-**Règle d'or** : toujours saturer l'abondement employeur (PEE + PERECO) AVANT d'abonder un PER individuel. La société abonde pour chaque euro versé — aucun rendement PER individuel n'égale un match à 50-300%.
+**À retenir** : quand un abondement employeur existe (PEE + PERECO), il est généralement plus intéressant de le capter avant d'alimenter un PER individuel, sous réserve du blocage et des frais.
 
 ### Plafond partagé : ce qui consomme le plafond 163 quatervicies
 

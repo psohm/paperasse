@@ -91,7 +91,7 @@
       "dividendes_reinvestis": "Exonérés IR tant qu'ils restent dans l'enveloppe"
     },
     "perco_pereco": {
-      "description": "Équivalent PER collectif — PERCO remplacé par PERECO (PER d'Entreprise Collectif) depuis loi Pacte",
+      "description": "Équivalent PER collectif — PERCO remplacé par le PERECO (PER d'entreprise collectif) par la loi Pacte ; plus de nouveau PERCO depuis le 01/10/2020",
       "sortie_retraite": {
         "compartiment_2_capital": "Capital exonéré IR (seuls les gains soumis aux PS, taux en vigueur — cf. SKILL.md, 18,6% depuis LFSS 2026) — régime distinct du PER individuel",
         "compartiment_2_rente": "RVCTO (Rente Viagère à Titre Onéreux) — fraction imposable : <50 ans=70%, 50-59=50%, 60-69=40%, 70+=30%",

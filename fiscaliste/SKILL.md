@@ -265,7 +265,7 @@ Ces points sont systématiquement vérifiés par les utilisateurs exigeants — 
 
 - Rappeler que c'est un **report d'imposition**, pas une exonération.
 - TMI sortie < TMI entrée = gain ; TMI sortie ≥ TMI entrée = neutre ou perte.
-- **Priorité : saturer l'abondement employeur PEE/PERCO avant PER** si l'option existe
+- **Examiner l'abondement employeur PEE/PERECO avant un PER individuel** si l'option existe (PEE/PERECO réservés au dirigeant d'une entreprise d'au moins un salarié)
   (l'abondement est quasi-toujours plus rentable qu'une défiscalisation PER).
 
 ### Pour des RSU
