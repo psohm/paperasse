@@ -4,7 +4,8 @@
     "declaration": 2026,
     "sources": [
       "BOI-RPPM-PVBMI",
-      "BOI-RPPM-PVBMC-30 (crypto)"
+      "BOI-RPPM-PVBMC-30 (crypto)",
+      "BOI-BNC-CHAMP-10-10-20-40 (staking/BNC)"
     ]
   },
 
@@ -50,12 +51,12 @@
 
     "methode_pamc": {
       "description": "Prix d'Acquisition Moyen Pondéré en Continu",
-      "formule": "plus_value = prix_cession − (valeur_totale_portefeuille × montant_cession / valeur_portefeuille_avant_cession)",
+      "formule": "plus_value = prix_cession − (prix_total_acquisition_portefeuille × prix_cession / valeur_portefeuille_avant_cession)",
       "note": "Nécessite de tracer l'historique complet du portefeuille depuis le premier achat"
     },
 
     "taux": {
-      "regime_defaut": "PFU 30% (12.8% IR + 17.2% PS)",
+      "regime_defaut": "PFU 31.4% (12.8% IR + 18.6% PS) — LFSS 2026, applicable revenus du patrimoine dès 2025",
       "option_bareme": "Possible depuis revenus 2023 (LFI 2022) — avantageuse si TMI ≤ 11%"
     },
 
@@ -69,6 +70,19 @@
       "note": "Cessions cumulées ≤ 305 € par an → exonération totale. Au-delà : imposition intégrale (pas seulement la fraction au-delà)"
     },
 
-    "activite_habituelle": "Requalification possible en BIC si activité habituelle/professionnelle — fiscalité plus lourde (cotisations sociales TNS)"
+    "activite_habituelle": "Requalification possible en BIC si activité habituelle/professionnelle — fiscalité plus lourde (cotisations sociales TNS)",
+
+    "transmission_deces": {
+      "principe": "Le décès n'est pas une cession à titre onéreux (art. 150 VH bis CGI). Les PV latentes ne sont pas imposées à l'IR ni aux PS.",
+      "purge_pv_latentes": "Les plus-values latentes accumulées par le défunt sont définitivement exonérées d'IR et de prélèvements sociaux.",
+      "base_cout_heritiers": "Les héritiers reprennent le portefeuille à sa valeur vénale au jour du décès (valeur retenue pour les droits de succession). Cette valeur devient leur nouveau prix total d'acquisition dans la formule PAMC.",
+      "droits_succession": "Droits de succession dus sur la valeur au décès selon le lien familial et les abattements légaux (100 000 EUR par enfant, exonération conjoint survivant).",
+      "points_attention": [
+        "Valorisation : cours de clôture en EUR à la date du décès (exchange centralisé ou explorateur blockchain)",
+        "Accès aux wallets : sans clé privée ou accès exchange transmis aux héritiers, les actifs sont définitivement perdus",
+        "Déclaration de succession obligatoire : actifs numériques à l'actif successoral (art. 750 ter CGI)"
+      ],
+      "sources": ["art. 150 VH bis CGI", "art. 750 ter CGI", "BOI-RPPM-PVBMC-30"]
+    }
   }
 }

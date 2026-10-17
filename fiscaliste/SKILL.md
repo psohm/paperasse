@@ -1,31 +1,30 @@
 ---
 name: fiscaliste
 metadata:
-  last_updated: 2026-04-19
+  last_updated: 2026-05-30
 includes:
   - data/**
   - references/**
   - foyer.example.json
   - examples/**
 description: |
-  Fiscaliste IA pour la fiscalité personnelle des contribuables français. Copilote pour
-  l'optimisation et la déclaration de l'impôt sur le revenu, l'IFI, les revenus du capital,
-  les revenus fonciers, l'equity salarial, les crypto-actifs et le PER.
+  Fiscaliste IA pour la fiscalité personnelle des particuliers français : optimisation
+  et déclaration de l'impôt sur le revenu, IFI, revenus du capital, revenus fonciers,
+  equity salarial, crypto-actifs et PER.
 
-  Couvre le calcul de l'IR (barème progressif, quotient familial, décote, PAS, CEHR,
-  revenus exceptionnels), la déclaration 2042 et ses annexes, les revenus du capital
-  (PFU vs barème, PEA, assurance-vie rachats, dividendes, plus-values mobilières), les
-  revenus fonciers (micro vs réel, déficit, LMNP, SCI à l'IR), l'equity startup (RSU,
-  BSPCE, stock-options, PEE/PERCO), la fiscalité crypto (méthode PAMC, formulaire 2086),
-  l'IFI, et les déductions (PER, pension alimentaire).
+  Couvre le calcul de l'IR (barème, quotient familial, décote, PAS, CEHR, revenus
+  exceptionnels), la déclaration 2042 et annexes, les revenus du capital (PFU vs barème,
+  PEA, assurance-vie, dividendes, plus-values), les revenus fonciers (micro/réel,
+  déficit, LMNP, SCI IR), l'equity startup (RSU, BSPCE, stock-options, PEE/PERCO),
+  la fiscalité crypto (PAMC, 2086), l'IFI et les déductions (PER, pension alimentaire).
 
-  Triggers: impôt sur le revenu, IR, déclaration 2042, quotient familial, barème, décote,
-  PAS, PFU, flat tax, PEA, assurance-vie, LMNP, revenus fonciers, déficit foncier, SCI IR,
-  RSU, BSPCE, stock-options, PEE, PERCO, crypto, fiscalité crypto, 2086, IFI, PER, plafond
-  PER, niche fiscale, optimisation fiscale, simulation IR, TMI
+  Triggers: impôt sur le revenu, IR, 2042, quotient familial, décote, PAS, PFU,
+  flat tax, PEA, assurance-vie, LMNP, revenus fonciers, déficit foncier, SCI IR, RSU,
+  BSPCE, stock-options, PEE/PERCO, crypto, 2086, IFI, PER, plafond PER, niche fiscale,
+  optimisation fiscale, simulation IR, TMI.
 
-  Hors scope : succession / donation (voir skill notaire), IS / SASU / arbitrage
-  dividende-salaire / SCI à l'IS (voir skill comptable).
+  Hors scope : succession/donation (notaire), IS/SASU/arbitrage dividende-salaire/SCI IS
+  (comptable).
 ---
 
 # Fiscaliste IA
@@ -89,7 +88,7 @@ Dernière MAJ: [date] — Vérifier les barèmes de la dernière loi de finances
 |--------|-----------|------------|
 | Salaires | 1AJ/1BJ | 10 % (min 509 €, max 14 555 €) ou frais réels |
 | Pensions / retraites | 1AS/1BS | 10 % (min 450 €, max 4 446 €) par foyer |
-| **Chômage (ARE)** | 1AP/1BP | **Aucun** (piège classique : ne jamais mettre en 1AJ) |
+| **Chômage (ARE)** | 1AP/1BP | **10 %** — l'ARE est un revenu de remplacement imposé selon les règles des traitements et salaires (BOI-RSA-BASE-30-50-20) ; l'abattement de 10 % s'applique sur le total salaires + ARE. Se déclare en 1AP/1BP (pas en 1AJ), mais bénéficie bien de l'abattement. |
 | Dividendes (option barème) | 2DC | 40 % |
 | Dividendes (PFU) | 2DC | Aucun |
 | Micro-BNC | 5TE | 34 % (plafond 77 700 €) |
@@ -100,11 +99,18 @@ Dernière MAJ: [date] — Vérifier les barèmes de la dernière loi de finances
 
 ### PFU et prélèvements sociaux
 
-- **PFU global : 30 %** (12,8 % IR + 17,2 % PS) pour les revenus 2025
-- **Prélèvements sociaux sur revenus du capital : 17,2 %** (revenus 2025)
+La LFSS 2026 (loi n° 2025-1403 du 30/12/2025, art. 12) a porté la CSG sur les revenus du capital de 9,2 % à 10,6 %, soit un total PS de 17,2 % à 18,6 %, **avec deux dates d'entrée en vigueur distinctes** selon la nature du revenu :
+
+| Catégorie | Base CSS | PS revenus 2025 (déclaration 2026) | PS revenus 2026+ | PFU effectif 2025 |
+|---|---|---|---|---|
+| **Revenus du patrimoine** : PV mobilières (CTO), crypto, LMNP | L. 136-6 CSS | **18,6 %** | 18,6 % | **31,4 %** |
+| **Produits de placement** : dividendes, intérêts, gains PEA à la sortie, PER capital | L. 136-7 CSS | 17,2 % | **18,6 % (à partir du 01/01/2026)** | 30 % |
+| **Cas inchangés** : AV, foncier nu, SCPI, PEL/CEL anciens, livrets réglementés | n/a | 17,2 % | 17,2 % | n/a |
+
+**Conséquence pratique** : pour la déclaration 2026 (revenus 2025), une PV mobilière sur compte-titres est imposée à **31,4 % au PFU** (12,8 % IR + 18,6 % PS), alors qu'un dividende encaissé en 2025 reste à **30 %** (12,8 % IR + 17,2 % PS). Le passage à 18,6 % pour les dividendes interviendra sur les encaissements 2026.
+
 - **CSG déductible : 6,8 %** — **uniquement si option barème** sur revenus du capital N-1
 - **Option barème globale** : concerne TOUS les revenus du capital de l'année
-- LFSS 2026 a porté le taux PS à 18,6 % à compter du 1er janvier 2026 — ne s'applique PAS aux revenus 2025 déclarés en 2026 (encaissement antérieur).
 
 ### PER (versements 2025)
 
@@ -124,17 +130,27 @@ Dernière MAJ: [date] — Vérifier les barèmes de la dernière loi de finances
 
 ### CEHR (Contribution Exceptionnelle Hauts Revenus)
 
-Base : RFR, pas RNI. S'ajoute à l'IR net.
+Base : RFR, pas RNI. S'ajoute à l'IR net. Art. 223 sexies CGI.
 
 | Situation | Tranche 3 % | Tranche 4 % |
 |-----------|-------------|-------------|
 | Célibataire | 250 000 € — 500 000 € | > 500 000 € |
 | Couple | 500 000 € — 1 000 000 € | > 1 000 000 € |
 
+### CDHR (Contribution Différentielle sur les Hauts Revenus)
+
+Mécanisme **distinct de la CEHR** : impose un **plancher d'imposition à 20 %** sur les foyers à hauts RFR. Art. 224 CGI, créé par l'art. 10 LFI 2025 (loi n° 2025-127 du 14/02/2025), **pérennisé par la LFI 2026** jusqu'au retour du déficit public sous 3 % du PIB.
+
+Seuils RFR : > 250 000 € (célibataire) / > 500 000 € (couple). S'applique si le taux moyen d'imposition (IR + CEHR) reste sous 20 % du RFR retraité.
+
+Calcul automatique par l'administration après dépôt de la 2042. Acompte de 95 % à verser entre le 1er et le 15 décembre via le service "Prélèvement à la source" sur impots.gouv.fr.
+
+Détail dans [references/cas-speciaux.md](references/cas-speciaux.md) section CDHR.
+
 ### Crypto (PAMC)
 
 - **Exonération totale** si cessions annuelles ≤ **305 €** (seuil en montant brut, pas en PV)
-- Au-delà : imposition PFU 30 % sur TOUTE la PV (pas seulement l'excédent)
+- Au-delà : imposition **PFU 31,4 %** (12,8 % IR + 18,6 % PS, LFSS 2026, PV mobilière = revenu du patrimoine) sur TOUTE la PV (pas seulement l'excédent), pour les cessions réalisées dès 2025
 - Formulaire 2086 obligatoire dès 1 € de cession > 305 €
 
 ### Assurance-vie — rachats après 8 ans
@@ -171,7 +187,7 @@ python fiscaliste/scripts/calc_ir.py --rni 45000 --parts 1
 python fiscaliste/scripts/calc_ir.py --rni 126000 --parts 3 --parts-base 2
 ```
 
-Le script applique : barème 2025, quotient familial avec plafonnement, décote, PS 17,2 % sur revenus du capital, CEHR. Il **ne traite pas** les réductions/crédits (à retrancher manuellement) ni les régimes spéciaux (revenus exceptionnels, non-résidents).
+Le script applique : barème 2025, quotient familial avec plafonnement, décote, PS différenciés selon la nature du revenu (18,6 % sur revenus du patrimoine dès 2025 ; 17,2 % sur produits de placement 2025 ; 17,2 % inchangé sur AV/foncier nu/SCPI/PEL-CEL), CEHR. Il **ne traite pas** les réductions/crédits (à retrancher manuellement) ni les régimes spéciaux (revenus exceptionnels, non-résidents). Pour la CDHR (plancher 20 % sur RFR > 250/500 k€), voir [references/cas-speciaux.md](references/cas-speciaux.md) — calculée automatiquement par l'administration.
 
 Pour la fraîcheur des données : `python fiscaliste/scripts/update_data.py`.
 
@@ -255,7 +271,7 @@ Ces points sont systématiquement vérifiés par les utilisateurs exigeants — 
 ### Pour des RSU
 
 - Gain d'acquisition = **SALAIRE** (case 1TT), abattement 10 % applicable sur le total salaires.
-- PV de cession ultérieure = **distincte**, imposée au PFU 30 % au moment de la revente.
+- PV de cession ultérieure = **distincte**, imposée au **PFU 31,4 %** (12,8 % IR + 18,6 % PS, LFSS 2026 — PV mobilière = revenu du patrimoine) pour les cessions réalisées dès 2025.
 - Toujours distinguer ces deux phases dans la réponse.
 - Mentionner la contribution salariale 10 % si plan qualifiant.
 - CSG 9,7 % sur le gain d'acquisition RSU.
