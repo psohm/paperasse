@@ -12,12 +12,17 @@
   },
 
   "per_individuel": {
-    "description": "Plafond de déduction PER pour les versements 2025 (déclaration 2026)",
+    "description": "Plafond de déduction PER (art. 163 quatervicies) pour les versements 2025 (déclaration 2026)",
     "calcul": "max(plancher, 10% × revenus professionnels nets N-1) — salaires après abattement 10%, BNC, BIC, hors revenus du capital",
-    "plancher_formule": "10% × PASS_annee_versement",
-    "plancher_euros": 4710,
-    "plafond_absolu_formule": "10% × 8 × PASS_annee_versement",
-    "plafond_absolu_euros": 37680,
+    "plancher_formule": "10% × PASS de l'année précédant le versement (BOI-IR-BASE-20-50-20 § 80)",
+    "plancher_euros": 4637,
+    "plafond_absolu_formule": "10% × 8 × PASS de l'année précédant le versement",
+    "plafond_absolu_euros": 37094,
+    "par_annee_de_versement": {
+      "2025": { "pass_reference": 46368, "plancher": 4637, "plafond_absolu": 37094 },
+      "2026": { "pass_reference": 47100, "plancher": 4710, "plafond_absolu": 37680 }
+    },
+    "source_table": "https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_integral/Brochure-IR-2026.pdf#page=53",
     "report": {
       "duree_avant_2026": "3 ans",
       "duree_depuis_2026": "5 ans (loi de finances 2026 — non rétroactif, plafonds antérieurs à 2026 restent à 3 ans)",

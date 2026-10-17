@@ -114,10 +114,10 @@ La LFSS 2026 (loi n° 2025-1403 du 30/12/2025, art. 12) a porté la CSG sur les 
 
 ### PER (versements 2025)
 
-- **Plancher de déduction : 4 710 €** (10 % × PASS 2025 = 47 100 €)
-- **Plafond de déduction : 37 680 €** (10 % × 8 × PASS 2025)
+- **Plancher de déduction : 4 637 €** (10 % × PASS 2024 = 46 368 € — PASS de l'année précédant le versement, BOI-IR-BASE-20-50-20 § 80 ; versements 2026 : 4 710 €)
+- **Plafond de déduction : 37 094 €** (10 % × 8 × PASS 2024 ; versements 2026 : 37 680 €)
 - **Plafond personnalisé : 10 %** des revenus professionnels N-1 (après abattement 10 %)
-- **Report** : plafonds non utilisés des 3 années précédentes mobilisables (FIFO ancien en premier)
+- **Report** : plafonds non utilisés des 3 années précédentes mobilisables (FIFO ancien en premier) ; 5 ans pour les plafonds acquis à partir de 2026 (LFI 2026)
 - **Mutualisation couple** : case à cocher sur 2042
 
 ### IFI

@@ -25,20 +25,20 @@ Exemple : versement 5 000 €, TMI 30% → économie IR = 1 500 €.
 **Plafond = max(plancher, 10% × revenus professionnels nets N-1)**, dans la limite du plafond absolu.
 
 ```
-Plafond = max(4 710 €,  10% × revenus pro N-1)
-                  ↑                    ↑
-          garanti même          salaires après abattement 10%,
-          sans revenus          BNC, BIC — pas les revenus du capital
+Plafond des versements de l'année N = max(10% × PASS N-1,  10% × revenus pro N-1)
+                                              ↑                       ↑
+                                     garanti même             salaires après abattement 10%,
+                                     sans revenus             BNC, BIC — pas les revenus du capital
 ```
 
 ### Bornes
 
-Voir `data/per-plafonds.json` → `per_individuel` pour les montants à jour (plancher et plafond absolu recalculés chaque année sur le PASS).
+Le plancher et le plafond absolu se calculent sur le **PASS de l'année précédant celle du versement** (BOI-IR-BASE-20-50-20, § 80 ; aide-mémoire de la brochure IR 2026). Voir `data/per-plafonds.json` → `per_individuel`.
 
-| | Formule | Exemple 2025 (PASS = 47 100 €) |
-|--|---------|-------------------------------|
-| Plancher (minimum garanti) | 10% × PASS | 4 710 € |
-| Plafond absolu | 10% × 8 × PASS | 37 680 € |
+| | Formule | Versements 2025 (PASS 2024 = 46 368 €) | Versements 2026 (PASS 2025 = 47 100 €) |
+|--|---------|---------------------------------------|---------------------------------------|
+| Plancher (minimum garanti) | 10% × PASS N-1 | 4 637 € | 4 710 € |
+| Plafond absolu | 10% × 8 × PASS N-1 | 37 094 € | 37 680 € |
 
 Le plancher s'applique même sans aucun revenu professionnel — un foyer sans activité peut toujours déduire au moins le plancher.
 
@@ -73,21 +73,22 @@ Les époux/pacsés soumis à imposition commune peuvent **mutualiser leurs plafo
 
 **Le PER est un report d'imposition, pas une exonération.** À la sortie, les versements sont imposés au barème et les gains au PFU. On ne sait pas aujourd'hui à quelle TMI on sortira, ni quelles seront les règles fiscales dans 10, 20 ou 30 ans.
 
-### Le seul vrai avantage : les intérêts composés sur l'économie d'impôt
+### Deux sources de gain : différentiel de TMI et capitalisation de l'impôt différé
 
-Le mécanisme réel du PER n'est pas une économie d'impôt — c'est un **prêt sans intérêt de l'État** que vous investissez pendant plusieurs années.
+Le gain d'un PER vient de deux effets distincts :
+1. **Différentiel de TMI** : on déduit à la TMI d'aujourd'hui et on est imposé à la TMI de la retraite.
+2. **Capitalisation de l'impôt différé** : l'impôt non payé à l'entrée reste investi jusqu'à la sortie.
 
 ```
-Versement 10 000 €, TMI 41%
-→ Économie IR immédiate : 4 100 € (l'État vous "prête" cette somme)
-→ Vous investissez 10 000 € au lieu de 5 900 € (si vous aviez payé l'IR)
-→ Sur 20 ans à 5%/an : 10 000 € → 26 533 € vs 5 900 € → 15 654 €
-→ Écart brut avant impôt sortie : +10 879 €
-→ À la sortie TMI 30% : impôt sur les 10 000 € = 3 000 € (vs 4 100 € payés à l'entrée)
-→ Gain net = différentiel TMI (1 100 €) + rendement sur l'économie d'impôt investie
+Illustration — hypothèses : versement 10 000 €, TMI 41 % à l'entrée, 30 % à la sortie,
+rendement 5 %/an net de frais pendant 20 ans (non garanti), gains imposés à la sortie dans les deux cas
+
+Avec PER    : 10 000 € investis → 26 533 € ; moins l'IR sur le capital versé à la sortie (3 000 € à 30 %) → 23 533 €
+Sans PER    : 5 900 € investis après IR → 15 654 €
+Écart : 7 879 € avant fiscalité des gains (plus élevée avec le PER, dont les gains sont plus importants)
 ```
 
-Plus l'horizon est long, plus l'effet de capitalisation sur les 4 100 € "prêtés" est puissant — indépendamment du différentiel de TMI.
+Plus l'horizon est long, plus le second effet pèse. Ces chiffres ne valent que pour les hypothèses retenues : rendement, frais du contrat, TMI de sortie et règles fiscales futures sont incertains.
 
 ### Gagnant / perdant
 
@@ -107,7 +108,7 @@ En versant aujourd'hui dans un PER, on accepte de **ne pas connaître les condit
 
 > **⚠ Changement de résidence fiscale** : si vous quittez la France avant la retraite, la situation se complique. La France conserve un droit d'imposition sur les sommes déduites (retenue à la source sur les distributions à des non-résidents). Le régime exact dépend de la convention fiscale avec le pays de destination — certaines conventions attribuent le droit d'imposer à la France (pays source), d'autres au pays de résidence, certaines prévoient une imposition partagée. Le déblocage anticipé n'est pas autorisé pour ce motif. **Consulter un fiscaliste spécialisé en mobilité internationale avant tout versement significatif si un départ à l'étranger est envisagé.**
 
-**Contraste avec le PEE** : l'abondement est acquis immédiatement, exonéré d'IR de façon certaine, et la sortie après 5 ans est exonérée d'IR selon des règles stables. Pas de pari sur le futur.
+**Contraste avec le PEE** : l'abondement est acquis au versement et exonéré d'IR, et la sortie après 5 ans est exonérée d'IR selon les règles actuelles. Le rendement des supports et les frais restent, eux, incertains.
 
 ### Cas favorables
 
@@ -130,7 +131,7 @@ En versant aujourd'hui dans un PER, on accepte de **ne pas connaître les condit
 
 1. **Sortie en rente viagère**
    - Imposition comme pension (barème + abattement 10% plafonné)
-   - Prélèvements sociaux 9,1%
+   - Prélèvements sociaux au taux en vigueur (17,2 % en 2025, 18,6 % depuis le 01/01/2026) sur la **seule fraction imposable** de la rente viagère à titre onéreux : 70 % avant 50 ans, 50 % de 50 à 59 ans, 40 % de 60 à 69 ans, 30 % à partir de 70 ans, selon l'âge au premier versement (BOI-ANNX-000513 ; service-public F34982)
    - Protection en cas de longévité
 
 2. **Sortie en capital**
@@ -172,7 +173,7 @@ Le PER individuel est quasi-systématiquement souscrit sous forme assurance (con
 | < 70 ans | 152 500 € par bénéficiaire exonéré, puis 20% jusqu'à 852 500 €, 31,25% au-delà (art. 990 I CGI) |
 | ≥ 70 ans | 30 500 € global exonéré tous bénéficiaires confondus, excédent soumis aux droits de succession (art. 757 B CGI) |
 
-**Mourir avant 70 ans avec un PER bien alimenté = transmission très efficace.** Le capital transmis bénéficie du même abattement que l'assurance-vie, et l'IR différé disparaît.
+Pour un PER assurance, un décès avant 70 ans relève de l'art. 990 I (abattement de 152 500 € par bénéficiaire), un décès à partir de 70 ans de l'art. 757 B, généralement moins favorable. Dans les deux cas, l'IR qui aurait frappé les versements déduits à la sortie n'est pas dû.
 
 **Piège de la rente en cas de décès :** si le titulaire a opté pour la rente viagère, les fonds sont aliénés — les héritiers ne récupèrent rien à la mort, sauf :
 - Clause de **réversion** (la rente continue au conjoint, à taux réduit)
@@ -180,7 +181,7 @@ Le PER individuel est quasi-systématiquement souscrit sous forme assurance (con
 
 Ces options réduisent le montant de la rente. À négocier à la souscription si la transmission est un objectif.
 
-**PER compte-titres (rare) :** tombe dans la succession classique — IR et droits de succession s'appliquent. Vérifier la forme du contrat.
+**PER compte-titres (PER bancaire, rare) :** les sommes sont intégrées à l'actif successoral et relèvent des droits de succession ; le régime de l'assurance-vie (art. 990 I / 757 B) ne s'applique qu'au PER assurance (service-public F34982). Vérifier la forme du contrat.
 
 ## Priorité absolue : abondement employeur avant PER individuel
 
@@ -215,9 +216,9 @@ Plafond = **10% du bénéfice imposable** (dans la limite de 8 PASS) **+ 15% de 
 |------------|--------|--------------|
 | Fraction 10% | 10% × bénéfice (max 8 PASS) | Max 37 680 € |
 | Fraction 15% | 15% × (bénéfice − 47 100 €) si bénéfice > PASS | Variable |
-| Plancher | Même plancher que PER individuel | 4 710 € |
+| Plancher | 10% × PASS de l'année | 4 710 € |
 
-Le plafond TNS est donc potentiellement **supérieur** au plafond du PER individuel (37 680 €) pour les bénéfices élevés. Consulter l'avis d'imposition pour le plafond exact calculé par la DGFIP.
+Contrairement au plafond 163 quatervicies (PASS N-1, revenus N-1), le plafond 154 bis se calcule sur le **bénéfice et le PASS de l'année de versement**. Il est donc potentiellement **supérieur** pour les bénéfices élevés. Le plafond 154 bis ne figure pas sur l'avis d'imposition : il se calcule à partir du bénéfice de l'année.
 
 ### Double avantage TNS
 
@@ -229,17 +230,17 @@ Ce double avantage est plus puissant que le PER individuel (qui ne joue que sur 
 
 ### Arbitrage PER TNS vs PEE/PERECO pour le dirigeant TNS
 
-Pour un dirigeant TNS qui peut mettre en place un PEE/PERECO dans sa société (voir `equity-salarial.md` → section dédiée TNS) :
+Le PEE/PERECO n'est ouvert au dirigeant que si l'entreprise emploie **au moins un salarié en plus de lui** (art. L. 3332-2 C. trav. — voir `equity-salarial.md` → section dédiée TNS). **Dirigeant seul : PER TNS (154 bis) et PER individuel uniquement.**
 
-**Ordre de priorité recommandé :**
-1. Saturer l'abondement PEE + PERECO (11 304 € pour 2025) — double exonération IS + cotisations, liquidité PEE après 5 ans
-2. PER TNS (art. 154 bis) pour les montants supplémentaires — plafond plus élevé, double avantage IR + cotisations
-3. PER individuel (art. 163 quatervicies) en complément si plafond Madelin atteint
+**Ordre d'examen si l'entreprise a au moins un salarié :**
+1. Abondement PEE + PERECO (11 304 € maximum en 2025), en tenant compte du même abondement dû aux salariés
+2. PER TNS (art. 154 bis) pour les montants supplémentaires — plafond plus élevé, déduction IR + cotisations
+3. PER individuel (art. 163 quatervicies) en complément
 
-**Pourquoi PEE/PERECO d'abord ?**
-- L'abondement société est exonéré de cotisations TNS côté dirigeant ET de charges patronales côté société
-- La sortie PEE est en PFU sur les gains (pas au barème) — avantage si TMI retraite = TMI actuel
-- Liquidité supérieure : PEE débloquable après 5 ans (nombreux cas anticipés)
+**Atouts du PEE/PERECO dans ce cas :**
+- L'abondement est exonéré de cotisations (côté dirigeant comme côté société) et d'IR ; la CSG/CRDS reste due
+- À la sortie du PEE, seuls les PS frappent les gains (pas d'IR)
+- Liquidité : PEE disponible après 5 ans (nombreux cas de déblocage anticipé)
 
 ## Différence PER individuel vs PERECO / PERO
 
@@ -268,7 +269,7 @@ Le plafond de déduction (art. 163 quatervicies) est commun à toutes les envelo
 
 1. **Oublier le plafond** : versement > plafond → fraction non déductible (mais remboursable sans frais ou reportable selon le contrat)
 2. **Sortie en capital sur un TMI 45%** : imposition quasi équivalente à un revenu normal — intérêt limité
-3. **Mutualisation couple oubliée** : conjoint sans revenu laisse 4 710 € de plafond inemployé
+3. **Mutualisation couple oubliée** : conjoint sans revenu laisse le plancher (10 % du PASS N-1) inemployé
 4. **Assurer le plafond N-1 sur l'avis** : ne pas se fier aux calculs manuels, utiliser le plafond officiel DGFIP
 5. **PER individuel avant PEE/PERECO** : manque l'abondement employeur
 

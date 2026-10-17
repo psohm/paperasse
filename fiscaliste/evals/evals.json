@@ -220,11 +220,11 @@
       "id": 16,
       "name": "per-mutualisation-couple",
       "prompt": "Mon conjoint ne travaille pas (parent au foyer), moi je gagne 70 000 € (salaire net imposable). Mon plafond PER est déjà bien utilisé. Peut-il verser sur son PER et déduire quand même ?",
-      "expected_output": "Oui via la mutualisation couple (case à cocher sur 2042). Le conjoint sans revenu pro a un plafond plancher de 4 710 € (10 % × PASS). Mutualisation = les plafonds des deux conjoints sont additionnés. Économie selon TMI : 4 710 × 30 % = 1 413 €. Le versement peut être fait sur le PER du conjoint sans revenu pro et déduit du revenu imposable commun.",
+      "expected_output": "Oui via la mutualisation couple (case à cocher sur 2042). Le conjoint sans revenu pro a un plafond plancher de 4 637 € pour les versements 2025 (10 % × PASS 2024, PASS de l'année précédant le versement). Mutualisation = les plafonds des deux conjoints sont additionnés. Économie selon TMI : 4 637 × 30 % = 1 391 €. Le versement peut être fait sur le PER du conjoint sans revenu pro et déduit du revenu imposable commun.",
       "files": [],
       "assertions": [
         "Le skill identifie la possibilité de mutualisation couple",
-        "Le plafond plancher 4 710 € est cité",
+        "Le plafond plancher 4 637 € (versements 2025, PASS 2024) est cité",
         "Le skill précise qu'il faut COCHER la case de mutualisation sur 2042",
         "L'économie d'impôt est chiffrée en appliquant le TMI du foyer",
         "Le skill recommande de vérifier l'avis d'imposition N-1 pour le plafond officiel DGFIP"
@@ -287,6 +287,36 @@
         "Le skill indique la case 1AP/1BP (et non 1AJ) pour déclarer l'ARE",
         "Le skill précise que la distinction 1AP vs 1AJ porte sur la nature du revenu (remplacement vs activité), pas sur l'abattement",
         "L'abattement suit le régime des salaires (plancher commun 509 € / plafond commun 14 555 € sur le total salaires + ARE)"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "tns-dirigeant-seul-pee-refuse",
+      "prompt": "Je suis gérant associé unique de mon EURL à l'IS, sans aucun salarié. Je veux mettre en place un PEE et un PERECO dans ma société pour me faire abonder au maximum. Combien puis-je me verser d'abondement exonéré en 2026 ?",
+      "expected_output": "Impossible : le PEE et le PERECO ne sont ouverts au chef d'entreprise ou au mandataire social que si l'entreprise emploie au moins un salarié en plus du dirigeant et moins de 250 salariés (art. L. 3332-2 C. trav. ; service-public F2142). Un dirigeant seul ne peut pas non plus conclure d'accord d'intéressement (art. L. 3312-3). Aucun abondement exonéré n'est donc possible. Alternatives : déduction des cotisations PER au titre de l'art. 154 bis CGI (10 % du bénéfice dans la limite de 8 PASS + 15 % de la fraction entre 1 et 8 PASS, plancher 10 % du PASS) puis PER individuel (163 quatervicies). Si un salarié réel est embauché (le conjoint compte), le plan devient possible, ouvert à tous les salariés avec le même abondement.",
+      "files": [],
+      "assertions": [
+        "Le skill refuse le PEE et le PERECO pour un dirigeant sans aucun salarié",
+        "Le skill cite la condition d'au moins un salarié en plus du dirigeant (art. L. 3332-2 du Code du travail ou fiche service-public F2142)",
+        "Le skill NE propose PAS de montant d'abondement exonéré (3 845 € / 7 690 €) pour ce cas",
+        "Le skill NE prétend PAS que la loi Pacte a supprimé la condition de salarié",
+        "Le skill mentionne aussi l'impossibilité d'un accord d'intéressement pour un dirigeant seul salarié",
+        "Le skill oriente vers le PER (art. 154 bis pour le TNS, puis 163 quatervicies)",
+        "Le skill précise qu'avec un salarié réel le plan doit être ouvert à tous les salariés, avec le même abondement"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "tns-sarl-avec-conjoint-salarie-pee",
+      "prompt": "Je suis gérant majoritaire d'une SARL à l'IS qui emploie ma femme comme salariée. Puis-je bénéficier d'un PEE avec abondement, et à quelles conditions ?",
+      "expected_output": "Oui : l'entreprise emploie au moins un salarié en plus du dirigeant et moins de 250, le gérant peut donc adhérer au PEE (art. L. 3332-2). Le plan doit être ouvert à tous les salariés ; l'abondement suit les mêmes règles pour tous, dans la limite de 3 fois le versement et 8 % du PASS (3 845 € en 2026). L'abondement est déductible du résultat, exonéré d'IR et de cotisations, mais soumis à la CSG/CRDS (9,7 %) ; forfait social nul sous 50 salariés. Les versements du gérant sont plafonnés au quart du revenu professionnel imposé l'année précédente. L'emploi de la conjointe doit être réel.",
+      "files": [],
+      "assertions": [
+        "Le skill confirme l'éligibilité grâce à la présence d'un salarié en plus du dirigeant",
+        "Le skill rappelle que le plan doit être ouvert à tous les salariés avec les mêmes règles d'abondement",
+        "Le plafond d'abondement PEE 2026 est correct (8 % × 48 060 € ≈ 3 845 €) avec la limite de 3 fois le versement",
+        "Le skill mentionne la CSG/CRDS due sur l'abondement (pas d'exonération totale des prélèvements sociaux)",
+        "Le skill rappelle que l'emploi du conjoint doit être réel"
       ]
     }
   ]
